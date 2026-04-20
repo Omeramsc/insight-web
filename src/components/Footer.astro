@@ -1,0 +1,62 @@
+---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import en from '../i18n/en.json';
+import ja from '../i18n/ja.json';
+
+interface Props {
+  lang: 'en' | 'ja';
+}
+
+const { lang } = Astro.props;
+const t = lang === 'ja' ? ja : en;
+const mail = `mailto:${t.urls.contactEmail}`;
+---
+
+<footer class="border-t border-border bg-ink py-16">
+  <div class="mx-auto max-w-7xl px-4 md:px-8 lg:px-16">
+    <div class="flex flex-col gap-12 md:flex-row md:justify-between">
+      <div class="max-w-sm space-y-4">
+        <a href={`/${lang}/`} class="inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink rounded">
+          <img src="/assets/logo.svg" alt="" width="120" height="32" class="h-8 w-auto" />
+        </a>
+        <p class="text-sm text-text-secondary">{t.footer.brand}</p>
+        <LanguageSwitcher lang={lang} />
+      </div>
+      <div class="grid gap-10 sm:grid-cols-2">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-wider text-text-muted">{t.footer.linksTitle}</p>
+          <ul class="mt-4 space-y-2 text-sm text-text-secondary">
+            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={`/${lang}/#features`}>{t.footer.features}</a></li>
+            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={`/${lang}/#demo`}>{t.footer.demo}</a></li>
+            <li>
+              <a
+                href={t.urls.gumroad}
+                class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Gumroad
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-wider text-text-muted">{t.footer.legalTitle}</p>
+          <ul class="mt-4 space-y-2 text-sm text-text-secondary">
+            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href="/accessibility">{t.footer.accessibility}</a></li>
+            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href="#">{t.footer.privacy}</a></li>
+            <li>
+              <a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={mail}>
+                {t.footer.contact}: {t.urls.contactEmail}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="mt-12 text-xs leading-relaxed text-text-muted">
+      {t.footer.copyright}
+      <span class="mt-2 block">{t.footer.rights}</span>
+    </p>
+  </div>
+</footer>

@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import ProblemStatement from '../../components/ProblemStatement.astro';
+import Features from '../../components/Features.astro';
+import BeforeAfter from '../../components/BeforeAfter.astro';
+import DemoVideo from '../../components/DemoVideo.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
+import Comparison from '../../components/Comparison.astro';
+import Pricing from '../../components/Pricing.astro';
+import FAQ from '../../components/FAQ.astro';
+import en from '../../i18n/en.json';
+import ja from '../../i18n/ja.json';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'ja' } }];
+}
+
+const { lang } = Astro.params;
+const locale = lang === 'ja' ? 'ja' : 'en';
+const t = locale === 'ja' ? ja : en;
+---
+
+<Base lang={locale} title={t.meta.title} description={t.meta.description}>
+  <link slot="head" rel="preload" as="image" href="/assets/hero-bg.png" />
+  <Hero lang={locale} />
+  <ProblemStatement lang={locale} />
+  <Features lang={locale} />
+  <BeforeAfter lang={locale} />
+  <DemoVideo lang={locale} />
+  <HowItWorks lang={locale} />
+  <Comparison lang={locale} />
+  <Pricing lang={locale} />
+  <FAQ lang={locale} />
+</Base>

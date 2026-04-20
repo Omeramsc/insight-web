@@ -1,0 +1,85 @@
+---
+import { Check, X, Minus } from 'lucide-astro';
+import en from '../i18n/en.json';
+import ja from '../i18n/ja.json';
+
+interface Props {
+  lang: 'en' | 'ja';
+}
+
+const { lang } = Astro.props;
+const t = lang === 'ja' ? ja : en;
+
+function cellKind(v: boolean | 'partial') {
+  if (v === true) return 'yes' as const;
+  if (v === false) return 'no' as const;
+  return 'partial' as const;
+}
+---
+
+<section class="bg-surface py-16 md:py-24" aria-labelledby="compare-heading">
+  <div class="mx-auto max-w-7xl px-4 md:px-8 lg:px-16">
+    <div class="mx-auto max-w-3xl text-center" data-reveal>
+      <h2 id="compare-heading" class="font-display text-3xl font-semibold tracking-tight text-text-primary md:text-4xl">
+        {t.comparison.title}
+      </h2>
+      <p class="mt-4 text-lg text-text-secondary">{t.comparison.subtitle}</p>
+    </div>
+
+    <div class="mt-12 overflow-x-auto rounded-2xl border border-border bg-surface-2" data-reveal>
+      <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+        <caption class="sr-only">{t.comparison.title}</caption>
+        <thead>
+          <tr class="border-b border-border">
+            <th scope="col" class="px-4 py-4 font-display font-semibold text-text-primary md:px-6">
+              {t.comparison.feature}
+            </th>
+            <th scope="col" class="px-4 py-4 font-display font-semibold text-text-secondary md:px-6">
+              {t.comparison.adobe}
+            </th>
+            <th scope="col" class="px-4 py-4 font-display font-semibold text-text-secondary md:px-6">
+              {t.comparison.otherPlugins}
+            </th>
+            <th scope="col" class="px-4 py-4 font-display font-semibold text-accent md:px-6">
+              {t.comparison.insight}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {t.comparison.rows.map((row) => (
+            <tr class="border-b border-border/80 last:border-0">
+              <th scope="row" class="px-4 py-4 font-medium text-text-primary md:px-6">
+                {row.label}
+              </th>
+              {[row.adobe, row.other, row.insight].map((v) => {
+                const kind = cellKind(v as boolean | 'partial');
+                return (
+                  <td class="px-4 py-4 md:px-6">
+                    <span class="inline-flex items-center gap-2">
+                      {kind === 'yes' ? (
+                        <>
+                          <Check class="h-5 w-5 text-emerald-400" aria-hidden="true" />
+                          <span class="sr-only">{t.comparison.yes}</span>
+                        </>
+                      ) : kind === 'no' ? (
+                        <>
+                          <X class="h-5 w-5 text-text-muted" aria-hidden="true" />
+                          <span class="sr-only">{t.comparison.no}</span>
+                        </>
+                      ) : (
+                        <>
+                          <Minus class="h-5 w-5 text-amber-300" aria-hidden="true" />
+                          <span class="sr-only">{t.comparison.partial}</span>
+                        </>
+                      )}
+                    </span>
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,116 @@
+---
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import en from '../i18n/en.json';
+import ja from '../i18n/ja.json';
+
+interface Props {
+  lang: 'en' | 'ja';
+  title: string;
+  description: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  canonicalPath?: string;
+}
+
+const { lang, title, description, ogTitle, ogDescription, canonicalPath } = Astro.props;
+const t = lang === 'ja' ? ja : en;
+const canonical =
+  (t.urls?.canonicalBase ?? 'https://your-domain.netlify.app').replace(/\/$/, '') +
+  (canonicalPath ?? `/${lang}/`);
+const ogImageAbs = `${(t.urls?.canonicalBase ?? 'https://your-domain.netlify.app').replace(/\/$/, '')}/og-image.jpg`;
+---
+
+<!doctype html>
+<html lang={lang} dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={ogTitle ?? t.og.title} />
+    <meta property="og:description" content={ogDescription ?? t.og.description} />
+    <meta property="og:image" content={ogImageAbs} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href={canonical} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Geist:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <slot name="head" />
+  </head>
+  <body class="min-h-screen bg-ink font-sans text-text-primary antialiased">
+    <a
+      href="#main-content"
+      class="skip-link fixed left-4 top-0 z-[100] -translate-y-[200%] rounded bg-accent px-4 py-2 text-sm font-semibold text-ink transition-transform focus:translate-y-4 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+    >
+      {t.skipLink}
+    </a>
+    <Nav lang={lang} />
+    <main id="main-content">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    <script is:inline>
+      (function () {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var els = document.querySelectorAll('[data-reveal]');
+        if (!('IntersectionObserver' in window)) {
+          els.forEach(function (el) {
+            el.classList.add('reveal-visible');
+          });
+          return;
+        }
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                e.target.classList.add('reveal-visible');
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
+        );
+        els.forEach(function (el) {
+          io.observe(el);
+        });
+      })();
+    </script>
+    <style is:global>
+      [data-reveal] {
+        opacity: 0;
+        transform: translateY(18px);
+        transition:
+          opacity 0.65s ease,
+          transform 0.65s ease;
+      }
+      [data-reveal].reveal-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        [data-reveal] {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+      }
+      img-comparison-slider {
+        display: grid;
+        width: 100%;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        border: 1px solid #2a2a38;
+      }
+      img-comparison-slider:focus-visible {
+        outline: 2px solid #6c8eff;
+        outline-offset: 2px;
+      }
+    </style>
+  </body>
+</html>

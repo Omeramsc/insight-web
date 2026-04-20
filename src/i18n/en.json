@@ -1,0 +1,277 @@
+{
+  "urls": {
+    "gumroad": "https://5558697242856.gumroad.com/l/bhhwsy",
+    "youtubeId": "YOUR_VIDEO_ID",
+    "contactEmail": "you@example.com",
+    "canonicalBase": "https://your-domain.netlify.app"
+  },
+  "skipLink": "Skip to main content",
+  "meta": {
+    "title": "Insight — AI Photography Assistant for Photoshop",
+    "description": "The most comprehensive AI integration ever built for Adobe Photoshop. Generative fill, smart critique, lighting analysis, and more."
+  },
+  "og": {
+    "title": "Insight for Photoshop",
+    "description": "Your AI-powered unfair advantage in Adobe Photoshop."
+  },
+  "nav": {
+    "features": "Features",
+    "demo": "Demo",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "cta": "Get Insight",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "hero": {
+    "label": "Adobe Photoshop Plugin",
+    "h1_line1": "Your AI co-pilot.",
+    "h1_line2": "Inside Photoshop.",
+    "subtitle": "Insight scans your photo, analyzes your pixels, and generates photorealistic results — without leaving your workspace.",
+    "cta_primary": "Watch Demo",
+    "cta_secondary": "Get Insight",
+    "requirements": "Requires Photoshop 2024+  ·  Works with your own Gemini API key  ·  No subscription"
+  },
+  "problem": {
+    "items": [
+      {
+        "title": "Photoshop's partner models are limited",
+        "body": "Generations up to 1K only, with no support for references or multiple variants"
+      },
+      {
+        "title": "Tutorials are all over the place",
+        "body": "You perform the steps, but you don't reach the desired result"
+      },
+      {
+        "title": "You want to get better - you just don't know how",
+        "body": "No one gives you an honest feedback about your lighting, composition, or color-grading"
+      }
+    ]
+  },
+  "features": {
+    "sectionTitle": "Built by photographers, for photographers",
+    "sectionSubtitle": "Six modules that stay in your layer stack — from generative work to critique you can act on.",
+    "items": [
+      {
+        "badge": "Generative AI",
+        "title": "Advanced Generative Fill",
+        "description": "Fill, create, and extend, with a workflow that follows your prefernces, and help you get better results. Less guesswork, accurate results.",
+        "bullets": [
+          "Camera-aware context from EXIF",
+          "Automatic Prompt refinement to get the best results",
+          "High-Resolution Results, up to 4K",
+          "Multiple varied generations at the same time",
+          "Content and context aware"
+        ],
+        "imageAlt": "Insight Generative Fill panel in Photoshop"
+      },
+      {
+        "badge": "Ideation",
+        "title": "Multi-Variance Generation",
+        "description": "Generate up to ten different variations per run.",
+        "bullets": [
+          "Compare composition, color, and detail at a glance",
+          "Pick a winner, or pick them all"
+        ],
+        "imageAlt": "multi-variance preview grid"
+      },
+      {
+        "badge": "Similarity",
+        "title": "Reference-based Generation",
+        "description": "Generate a photo using up to 14 reference photos.",
+        "bullets": [
+          "Generate an item, piece of clothes, a character, or a background from a reference photo",
+          "Modify the style or color of the photo to match the reference photo"
+        ],
+        "imageAlt": "reference-based generation preview grid"
+      },
+      {
+        "badge": "Analysis",
+        "title": "Dynamic Photo Compare",
+        "description": "Stack multiple photos and rank them on composition, lighting, and impact.",
+        "bullets": [
+          "Compare photos side-by-side",
+          "Rank them on composition, lighting, and impact",
+          "Client picks and portfolio edits made easy and decisive"
+        ],
+        "imageAlt": "dynamic photo compare UI"
+      },
+      {
+        "badge": "Feedback",
+        "title": "Expert Critique",
+        "description": "Get useful feedback that focuses on the strong and weak points of the photo.",
+        "bullets": [
+          "Actionable notes instead of generic praise",
+          "Help pointing out things that are not working well"
+        ],
+        "imageAlt": "critique and lighting breakdown"
+      },
+      {
+        "badge": "Learning",
+        "title": "Personal Photoshop Tutor",
+        "description": "Context-aware coaching that sees your layers, explains how to achieve the wanted result, and helps you build repeatable technique.",
+        "bullets": [
+          "Retain and upgrade your skills",
+          "Short explanations that respect your time"
+        ],
+        "imageAlt": "tutor guidance in panel"
+      },
+      {
+        "badge": "Long-term",
+        "title": "Pattern Analysis",
+        "description": "Track repeating patterns across your recent work to help you stop repeating the same bad habits on future shoot.",
+        "bullets": [
+          "Trends surfaced across your recent work"
+        ],
+        "imageAlt": "pattern analysis summary"
+      }
+    ]
+  },
+  "beforeAfter": {
+    "sectionTitle": "Proof in the pixels",
+    "sectionSubtitle": "Drag the handle or use arrow keys. Every pair uses descriptive alt text for screen readers.",
+    "pair1Label": "Seamless generative fill — maintaining quality and colors",
+    "pair2Label": "Change the background seamlessly, modifying the lightning accordingly",
+    "pair3Label": "Adobe Generative Fill vs Insight — same prompt, same image, different quality",
+    "pairbefore": "before",
+    "pairafter": "after",
+    "pair3BeforeLabel": "Adobe's partner models",
+    "pair3AfterLabel": "Insight",
+    "zoomTitle": "Retain full image quality",
+    "zoomCaption": "Even when generating the whole Canvas size, image quality is maintained.",
+    "pair1BeforeAlt": "Portrait photo as shot from camera, unedited",
+    "pair1AfterAlt": "Same portrait after Insight AI generative fill — seamlessly extended background",
+    "pair2BeforeAlt": "Cosplayer portrait as shot, unedited",
+    "pair2AfterAlt": "Same cosplayer portrait after applying Insight critique and lighting recommendations",
+    "pair3BeforeAlt": "Banana image showing Adobe native generative fill result with visible artifacts",
+    "pair3AfterAlt": "Same banana image showing Insight generative fill result, photorealistic",
+    "zoomAlt": "Zoomed comparison crop of banana generative fill results"
+  },
+  "demo": {
+    "sectionLabel": "Product demo video",
+    "title": "See it in action",
+    "subtitle": "Watch Insight turn a complex edit into a 30-second workflow.",
+    "play": "Load and play video",
+    "iframeTitle": "Insight for Photoshop — product demo"
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "steps": [
+      {
+        "title": "Install in 5 minutes.",
+        "body": "Download the plugin and double click the file."
+      },
+      {
+        "title": "Set up your Gemini API Key.",
+        "body": "Register to Gemini studio, few clicks and you're ready to go."
+      },
+      {
+        "title": "Work smarter.",
+        "body": "Critique, generate, compare, and learn. Everything happens in your canvas, in new layers."
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Insight vs the usual stack",
+    "subtitle": "Same canvas. Different depth of integration.",
+    "feature": "Feature",
+    "adobe": "Adobe's Partner models",
+    "insight": "Insight",
+    "rows": [
+      { "label": "Full 4K generations", "adobe": false, "insight": true },
+      { "label": "Up to 14 reference images", "adobe": false, "insight": true },
+      { "label": "prompting-assistant", "adobe": false, "insight": true },
+      { "label": "10-variant generation", "adobe": false, "insight": true },
+      { "label": "Multi-document compare", "adobe": false, "insight": true },
+      { "label": "Private tutor", "adobe": false, "insight": true },
+      { "label": "Pattern analysis over time", "adobe": false, "insight": true },
+      { "label": "Uses your own Gemini API key", "adobe": false, "insight": true }
+    ],
+    "yes": "Yes",
+    "no": "No",
+    "partial": "Some"
+  },
+  "pricing": {
+    "title": "Insight for Photoshop",
+    "price": "$15",
+    "subtitle": "One-time purchase · No subscription",
+    "bullets": [
+      "All 6 feature modules",
+      "Lifetime updates (current version)",
+      "Use your own Gemini API key - Will never stop working",
+      "Works with Photoshop 2024+",
+      "Windows & Mac"
+    ],
+    "cta": "Get Insight",
+    "note1": "You'll be redirected to Gumroad for secure checkout.",
+    "note2": "Free tier Gemini API available — start for free."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Do I need to pay for the Gemini API?",
+        "answer": "Free tier is available via Google AI Studio and usable with all text features. Generative features requires a billed account."
+      },
+      {
+        "question": "Which Photoshop versions are supported?",
+        "answer": "Photoshop 2024 (v25.0) and later. CC subscription required (Insight is a plugin, not a replacement)."
+      },
+      {
+        "question": "Does Insight work on Mac and Windows?",
+        "answer": "Yes, both are supported."
+      },
+      {
+        "question": "Is my data private?",
+        "answer": "Insight uses your own Gemini API key. Images are processed by Google's API per their [privacy policy](https://ai.google.dev/gemini-api/terms). Insight itself stores no data."
+      },
+      {
+        "question": "Will my photos be trained on Google's servers?",
+        "answer": "When using Paid Services, Google doesn't use your prompts or responses to improve our products. Always stay up to date with [Google's privacy policy](https://ai.google.dev/gemini-api/terms#data-use-paid)."
+      },
+      {
+        "question": "Can I get a refund?",
+        "answer": "Refer to Gumroad's refund policy. If you have a technical issue, contact the email listed in the footer."
+      },
+      {
+        "question": "How is this different from Photoshop's native AI?",
+        "answer": "Insight support 4K generations, reads the photo's EXIF data, supports reference images, multiple variants, and adds critique/analysis/tutoring tools that Adobe doesn't offer."
+      },
+      {
+        "question": "Do I need an internet connection?",
+        "answer": "Yes, for AI features. The plugin panel itself opens offline, but generation/critique requires API access."
+      }
+    ]
+  },
+  "footer": {
+    "brand": "Insight for Photoshop",
+    "linksTitle": "Links",
+    "legalTitle": "Legal",
+    "features": "Features",
+    "demo": "Demo",
+    "accessibility": "Accessibility Statement",
+    "privacy": "Privacy Policy (minimal)",
+    "contact": "Contact",
+    "rights": "Insight is not affiliated with Adobe Inc. Adobe and Photoshop are trademarks of Adobe Inc.",
+    "copyright": "© 2026 chibameta. All rights reserved."
+  },
+  "accessibility": {
+    "pageTitle": "Accessibility Statement",
+    "metaDescription": "Accessibility statement for the Insight for Photoshop marketing website (IS 5568 / WCAG 2.1 AA goals).",
+    "intro": "This site is committed to making this website accessible to people with disabilities, in accordance with Israeli Standard IS 5568 (based on WCAG 2.1 AA).",
+    "featuresTitle": "Accessibility features on this site",
+    "features": [
+      "All images include descriptive alternative text",
+      "The site is keyboard-navigable",
+      "Color contrast meets WCAG AA standards for primary text and interactive states we control",
+      "Before/after comparison sliders are operable with keyboard arrow keys",
+      "Videos are embedded with titles; captions are available on YouTube when provided by the publisher",
+      "Skip-to-content link is available at the top of all pages"
+    ],
+    "limitationsTitle": "Known limitations",
+    "limitations": "Embedded video depends on YouTube's player. If you encounter player-specific barriers, please let us know. Some marketing imagery is decorative placeholders until final assets ship.",
+    "feedbackTitle": "Feedback",
+    "feedback": "If you encounter accessibility barriers, please contact us at the email shown below. We aim to respond within 5 business days.",
+    "lastReviewed": "Last reviewed: April 13, 2026"
+  }
+}

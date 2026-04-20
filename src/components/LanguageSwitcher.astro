@@ -1,0 +1,33 @@
+---
+interface Props {
+  lang: 'en' | 'ja';
+}
+
+const { lang } = Astro.props;
+---
+
+<div class="flex items-center gap-1 text-sm text-text-secondary" role="group" aria-label="Language">
+  <a
+    href="/en/"
+    hreflang="en"
+    lang="en"
+    class:list={[
+      'rounded px-2 py-1 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink',
+      lang === 'en' ? 'bg-surface-2 text-text-primary' : 'hover:text-text-primary',
+    ]}
+  >
+    EN
+  </a>
+  <span class="text-text-muted" aria-hidden="true">|</span>
+  <a
+    href="/ja/"
+    hreflang="ja"
+    lang="ja"
+    class:list={[
+      'rounded px-2 py-1 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink',
+      lang === 'ja' ? 'bg-surface-2 text-text-primary' : 'hover:text-text-primary',
+    ]}
+  >
+    日本語
+  </a>
+</div>

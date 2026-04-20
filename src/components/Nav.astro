@@ -1,0 +1,119 @@
+---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { Menu, X } from 'lucide-astro';
+import en from '../i18n/en.json';
+import ja from '../i18n/ja.json';
+
+interface Props {
+  lang: 'en' | 'ja';
+}
+
+const { lang } = Astro.props;
+const t = lang === 'ja' ? ja : en;
+
+const links = [
+  { href: `/${lang}/#features`, label: t.nav.features },
+  { href: `/${lang}/#demo`, label: t.nav.demo },
+  { href: `/${lang}/#pricing`, label: t.nav.pricing },
+  { href: `/${lang}/#faq`, label: t.nav.faq },
+];
+---
+
+<header class="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-ink/80 backdrop-blur-sm">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8 lg:px-16" aria-label="Main navigation">
+    <a href={`/${lang}/`} class="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink rounded">
+      <img src="/assets/logo.svg" alt="" width="120" height="32" class="h-8 w-auto" />
+      <span class="sr-only">Insight home</span>
+    </a>
+
+    <div class="hidden items-center gap-8 lg:flex">
+      {links.map((l) => (
+        <a
+          href={l.href}
+          class="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus:text-text-primary focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink rounded px-1"
+        >
+          {l.label}
+        </a>
+      ))}
+      <LanguageSwitcher lang={lang} />
+      <a
+        href={t.urls.gumroad}
+        class="inline-flex items-center gap-1 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-ink transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        {t.nav.cta}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="flex items-center gap-3 lg:hidden">
+      <LanguageSwitcher lang={lang} />
+      <button
+        type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-surface text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        data-menu-button aria-label={t.nav.menuOpen}
+      >
+        <Menu class="h-5 w-5 menu-icon-open" aria-hidden="true" />
+        <X class="menu-icon-close hidden h-5 w-5" aria-hidden="true" />
+      </button>
+    </div>
+  </nav>
+
+  <div
+    id="mobile-nav"
+    class="mobile-nav-panel hidden border-t border-border bg-ink/95 px-4 py-6 lg:hidden"
+    hidden
+  >
+    <div class="mx-auto flex max-w-7xl flex-col gap-4">
+      {links.map((l) => (
+        <a
+          href={l.href}
+          class="rounded-lg px-2 py-3 text-base font-medium text-text-primary hover:bg-surface focus:outline-none focus:ring-2 focus:ring-accent"
+ data-menu-link
+        >
+          {l.label}
+        </a>
+      ))}
+      <a
+        href={t.urls.gumroad}
+        class="mt-2 inline-flex items-center justify-center gap-1 rounded-lg bg-accent px-4 py-3 text-base font-semibold text-ink focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+        rel="noopener noreferrer"
+        target="_blank"
+        data-menu-link
+      >
+        {t.nav.cta}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.querySelector('[data-menu-button]');
+    var panel = document.getElementById('mobile-nav');
+    var openIcon = document.querySelector('.menu-icon-open');
+    var closeIcon = document.querySelector('.menu-icon-close');
+    var links = document.querySelectorAll('[data-menu-link]');
+    if (!btn || !panel) return;
+    function setOpen(open) {
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      panel.classList.toggle('hidden', !open);
+      panel.hidden = !open;
+      if (openIcon) openIcon.classList.toggle('hidden', open);
+      if (closeIcon) closeIcon.classList.toggle('hidden', !open);
+    }
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      setOpen(!open);
+    });
+    links.forEach(function (l) {
+      l.addEventListener('click', function () {
+        setOpen(false);
+      });
+    });
+  });
+</script>

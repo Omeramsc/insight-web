@@ -1,0 +1,305 @@
+{
+  "urls": {
+    "gumroad": "https://gumroad.com/l/PLACEHOLDER",
+    "youtubeId": "YOUR_VIDEO_ID",
+    "contactEmail": "you@example.com",
+    "canonicalBase": "https://your-domain.netlify.app"
+  },
+  "skipLink": "メインコンテンツへスキップ",
+  "meta": {
+    "title": "Insight — Adobe Photoshop 向け AI 写真アシスタント",
+    "description": "Adobe Photoshop 向けの包括的な AI 統合。Generative Fill、スマートな critique、ライティング分析など。"
+  },
+  "og": {
+    "title": "Insight for Photoshop",
+    "description": "Adobe Photoshop での、AI を活用したアドバンテージ。"
+  },
+  "nav": {
+    "features": "機能",
+    "demo": "デモ",
+    "pricing": "価格",
+    "faq": "FAQ",
+    "cta": "Insight を入手",
+    "menuOpen": "メニューを開く",
+    "menuClose": "閉じる"
+  },
+  "hero": {
+    "label": "Adobe Photoshop プラグイン",
+    "h1_line1": "あなたの AI コパイロット。",
+    "h1_line2": "Photoshop の中に。",
+    "subtitle": "Insight はメタデータを読み取り、ピクセルを解析し、ワークスペースを離れずにフォトリアルな結果を生成します。",
+    "cta_primary": "デモを見る",
+    "cta_secondary": "Gumroad で Insight を入手",
+    "requirements": "Photoshop 2024+ が必要  ·  ご自身の Gemini API key を使用  ·  サブスクリプション不要"
+  },
+  "problem": {
+    "items": [
+      {
+        "title": "Photoshop の AI はブラックボックス",
+        "body": "ネイティブの Generative Fill はカメラ設定を無視しがち"
+      },
+      {
+        "title": "ツールごとに別アプリが必要",
+        "body": "Lightroom、Bridge、Gemini — コンテキストスイッチの連続"
+      },
+      {
+        "title": "毎回同じミスを直している",
+        "body": "ライティングが平坦になりがちだと誰も教えてくれない"
+      }
+    ]
+  },
+  "features": {
+    "sectionTitle": "本気のレタッチャー向け",
+    "sectionSubtitle": "レイヤースタックに留まる 6 つのモジュール — 生成から実行可能な critique まで。",
+    "items": [
+      {
+        "badge": "Generative AI",
+        "title": "高度な Generative Fill + Magic Wand",
+        "description": "選択、グレイン、すでに決めた露出を尊重するワークフローで埋め込みや再構築を行います。推測と手直しを減らします。",
+        "bullets": [
+          "EXIF とシーンの手がかりからのカメラ対応コンテキスト",
+          "一度きりで終わらない—精密化できる結果"
+        ],
+        "imageAlt": "プレースホルダー: Photoshop 内の Insight Generative Fill パネル"
+      },
+      {
+        "badge": "アイデア出し",
+        "title": "Multi-Variance 生成",
+        "description": "1 回の実行で最大 10 の意味のあるバリエーションを生成し、差分を確認して物語に合う方向を選びます — ファイルを離れずに。",
+        "bullets": [
+          "構図、色、ディテールを一目で比較",
+          "候補を選び、非破壊編集を続行"
+        ],
+        "imageAlt": "プレースホルダー: multi-variance プレビューグリッド"
+      },
+      {
+        "badge": "解析",
+        "title": "Dynamic Photo Compare",
+        "description": "2〜5 枚のドキュメントを重ね、構図・ライティング・インパクトで順位付けし、クライアント選定やポートフォリオ編集を迅速に。",
+        "bullets": [
+          "レビューで信頼できる並べ替えスコア",
+          "往復を減らし、クリエイティブの方向性を明確に"
+        ],
+        "imageAlt": "プレースホルダー: ドキュメント比較 UI"
+      },
+      {
+        "badge": "Critique",
+        "title": "エキスパート Critique + ライティング分解",
+        "description": "率直で実用的なフィードバックと、何が平坦で、何が偶然で、何が機能しているかを説明するライティングの読み取り — レイヤーに落とし込めます。",
+        "bullets": [
+          "抽象的な称贊ではなく実行可能なメモ",
+          "セットでも応用できるライティングの言語"
+        ],
+        "imageAlt": "プレースホルダー: critique とライティング分解"
+      },
+      {
+        "badge": "学習",
+        "title": "パーソナル Photoshop Tutor",
+        "description": "レイヤーとツールを見たうえでのコンテキスト対応コーチング。トレードオフを平易に説明し、再現可能な技法を構築します。",
+        "bullets": [
+          "開いているドキュメントに紐づくガイダンス",
+          "時間を尊重する短い説明"
+        ],
+        "imageAlt": "プレースホルダー: パネル内の tutor ガイダンス"
+      },
+      {
+        "badge": "長期的",
+        "title": "Pattern Analysis",
+        "description": "プロジェクト横断で癖と盲点を追跡し、毎回同じ露出・色・フレーミングのミスを繰り返さないようにします。",
+        "bullets": [
+          "最近の作業傾向を表示",
+          "プライバシー優先: 分析したファイルからのインサイト"
+        ],
+        "imageAlt": "プレースホルダー: pattern analysis サマリー"
+      }
+    ]
+  },
+  "beforeAfter": {
+    "sectionTitle": "ピクセルで証明",
+    "sectionSubtitle": "ハンドルをドラッグするか矢印キーを使用。各ペアにはスクリーンリーダー向けの説明的な alt があります。",
+    "pair1Label": "シームレスな generative fill — フォトリアルでグレインにマッチ",
+    "pair2Label": "Insight の critique とライティング分解に沿ったフル編集",
+    "pair3Label": "Adobe Generative Fill vs Insight — 同一プロンプト、同一画像",
+    "pair3BeforeLabel": "Adobe Native",
+    "pair3AfterLabel": "Insight",
+    "zoomTitle": "ズームクロップ — バナナテスト",
+    "zoomCaption": "静的クロップ比較（詳細写真に差し替えてください）。",
+    "pair1BeforeAlt": "カメラ撮影のポートレート、未編集",
+    "pair1AfterAlt": "Insight の AI Generative Fill 後の同一ポートレート — 背景をシームレスに拡張",
+    "pair2BeforeAlt": "コスプレイヤーのポートレート、未編集",
+    "pair2AfterAlt": "Insight の critique とライティング推奨を適用した同一コスプレイヤーのポートレート",
+    "pair3BeforeAlt": "Adobe ネイティブの Generative Fill 結果にアーティファクトが見えるバナナ画像",
+    "pair3AfterAlt": "Insight の Generative Fill 結果でフォトリアルな同一バナナ画像",
+    "zoomAlt": "バナナの Generative Fill 結果のズーム比較クロップ"
+  },
+  "demo": {
+    "sectionLabel": "製品デモ動画",
+    "title": "実際の動作",
+    "subtitle": "複雑な編集を 30 秒のワークフローにまとめる Insight をご覧ください。",
+    "play": "動画を読み込んで再生",
+    "iframeTitle": "Insight for Photoshop — 製品デモ"
+  },
+  "howItWorks": {
+    "title": "使い方",
+    "steps": [
+      {
+        "title": "5 分でインストール。",
+        "body": "Gumroad からダウンロードし、インストーラーを実行。"
+      },
+      {
+        "title": "Photoshop で開く。",
+        "body": "パネルがワークスペースに表示。別ウィンドウ不要。コンテキストスイッチ不要。組み込まれた Insight のみ。"
+      },
+      {
+        "title": "よりスマートに作業。",
+        "body": "critique、生成、比較、学習。すべてキャンバス上で、新しいレイヤーに。"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "いつものスタックとの違い",
+    "subtitle": "同じキャンバス。統合の深さが違う。",
+    "feature": "機能",
+    "adobe": "Adobe ネイティブ",
+    "otherPlugins": "他プラグイン",
+    "insight": "Insight",
+    "rows": [
+      {
+        "label": "EXIF / カメラ設定を読む",
+        "adobe": false,
+        "other": false,
+        "insight": true
+      },
+      {
+        "label": "グレインにマッチした Generative Fill",
+        "adobe": false,
+        "other": false,
+        "insight": true
+      },
+      {
+        "label": "10 バリエーション生成",
+        "adobe": false,
+        "other": false,
+        "insight": true
+      },
+      {
+        "label": "マルチドキュメント比較",
+        "adobe": false,
+        "other": false,
+        "insight": true
+      },
+      {
+        "label": "ライティング図式",
+        "adobe": false,
+        "other": false,
+        "insight": true
+      },
+      {
+        "label": "コンテキスト対応 tutor",
+        "adobe": false,
+        "other": false,
+        "insight": true
+      },
+      {
+        "label": "時系列の pattern 分析",
+        "adobe": false,
+        "other": false,
+        "insight": true
+      },
+      {
+        "label": "サブスクリプション不要",
+        "adobe": true,
+        "other": "partial",
+        "insight": true
+      },
+      {
+        "label": "独自の API key を使用",
+        "adobe": false,
+        "other": false,
+        "insight": true
+      }
+    ],
+    "yes": "あり",
+    "no": "なし",
+    "partial": "一部"
+  },
+  "pricing": {
+    "title": "Insight for Photoshop",
+    "price": "$15",
+    "subtitle": "一回購入 · サブスクリプションなし",
+    "bullets": [
+      "6 つの機能モジュールすべて",
+      "ライフタイムアップデート（現行バージョン）",
+      "ご自身の Gemini API key を使用",
+      "Photoshop 2024+ 対応",
+      "Windows と Mac"
+    ],
+    "cta": "Gumroad で Insight を入手",
+    "note1": "安全な決済のため Gumroad にリダイレクトされます。",
+    "note2": "Gemini API の無料ティアが利用可能 — 無料で開始できます。"
+  },
+  "faq": {
+    "title": "よくある質問",
+    "items": [
+      {
+        "question": "Gemini API の料金は必要ですか？",
+        "answer": "Google AI Studio から無料ティアが利用できます。多くのユーザーは無料範囲内で収まります。"
+      },
+      {
+        "question": "対応する Photoshop のバージョンは？",
+        "answer": "Photoshop 2024（v25.0）以降。CC サブスクリプションが必要です（Insight は置き換えではなくプラグインです）。"
+      },
+      {
+        "question": "Mac と Windows で動きますか？",
+        "answer": "はい、両方サポートしています。"
+      },
+      {
+        "question": "データのプライバシーは？",
+        "answer": "Insight はご自身の Gemini API key を使用します。画像は Google の API により同社のプライバシーポリシーに従って処理されます。Insight 自体はデータを保存しません。"
+      },
+      {
+        "question": "返金はできますか？",
+        "answer": "Gumroad の返金ポリシーをご確認ください。技術的な問題がある場合はフッターのメールにご連絡ください。"
+      },
+      {
+        "question": "Photoshop ネイティブの AI との違いは？",
+        "answer": "Insight は EXIF を読み取り、グレインをマッチさせ、参照画像をサポートし、最大 10 のバリエーションを生成し、Adobe が提供しない critique / 分析 / tutor ツールを追加します。"
+      },
+      {
+        "question": "インターネット接続は必要ですか？",
+        "answer": "AI 機能有効時は必要です。パネル自体はオフラインで開けますが、生成 / critique には API アクセスが必要です。"
+      }
+    ]
+  },
+  "footer": {
+    "brand": "Insight for Photoshop",
+    "linksTitle": "リンク",
+    "legalTitle": "法的情報",
+    "features": "機能",
+    "demo": "デモ",
+    "accessibility": "アクセシビリティ声明",
+    "privacy": "プライバシーポリシー（簡易）",
+    "contact": "お問い合わせ",
+    "rights": "Insight は Adobe Inc. とは関係ありません。Adobe と Photoshop は Adobe Inc. の商標です。",
+    "copyright": "© 2026 [Your Name]. 無断転載を禁じます。"
+  },
+  "accessibility": {
+    "pageTitle": "アクセシビリティ声明",
+    "metaDescription": "Insight for Photoshop マーケティングサイトのアクセシビリティ声明（IS 5568 / WCAG 2.1 AA 目標）。",
+    "intro": "本サイトは、イスラエル規格 IS 5568（WCAG 2.1 AA に基づく）に沿って、障害のある方にもアクセスしやすいウェブを目指しています。",
+    "featuresTitle": "本サイトのアクセシビリティ機能",
+    "features": [
+      "画像には説明的な代替テキストを付与",
+      "キーボードで主要な操作が可能",
+      "当サイトが制御する本文テキストとインタラクティブ状態は WCAG AA のコントラストを目標",
+      "Before/After 比較スライダーは矢印キーで操作可能",
+      "動画は title を付与；YouTube 上で公開者が提供する場合はキャプションあり",
+      "全ページ先頭にメインコンテンツへスキップするリンク"
+    ],
+    "limitationsTitle": "既知の制限",
+    "limitations": "埋め込み動画は YouTube のプレーヤーに依存します。プレーヤー特有の障壁がある場合はお知らせください。最終アセットまでの間、装飾的なプレースホルダー画像を使用している場合があります。",
+    "feedbackTitle": "フィードバック",
+    "feedback": "アクセシビリティ上の障壁を見つけた場合は、下記メールまでご連絡ください。5 営業日以内の返答を目指します。",
+    "lastReviewed": "最終確認: 2026年4月13日"
+  }
+}
