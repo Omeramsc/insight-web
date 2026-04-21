@@ -26,8 +26,8 @@ function cellKind(v: boolean | 'partial') {
       <p class="mt-4 text-lg text-text-secondary">{t.comparison.subtitle}</p>
     </div>
 
-    <div class="mt-12 overflow-x-auto rounded-2xl border border-border bg-surface-2" data-reveal>
-      <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+    <div class="mx-auto mt-12 max-w-4xl overflow-x-auto rounded-2xl border border-border bg-surface-2" data-reveal>
+      <table class="w-full min-w-[480px] border-collapse text-left text-sm">
         <caption class="sr-only">{t.comparison.title}</caption>
         <thead>
           <tr class="border-b border-border">
@@ -36,9 +36,6 @@ function cellKind(v: boolean | 'partial') {
             </th>
             <th scope="col" class="px-4 py-4 font-display font-semibold text-text-secondary md:px-6">
               {t.comparison.adobe}
-            </th>
-            <th scope="col" class="px-4 py-4 font-display font-semibold text-text-secondary md:px-6">
-              {t.comparison.otherPlugins}
             </th>
             <th scope="col" class="px-4 py-4 font-display font-semibold text-accent md:px-6">
               {t.comparison.insight}
@@ -51,7 +48,7 @@ function cellKind(v: boolean | 'partial') {
               <th scope="row" class="px-4 py-4 font-medium text-text-primary md:px-6">
                 {row.label}
               </th>
-              {[row.adobe, row.other, row.insight].map((v) => {
+              {[row.adobe, row.insight].map((v) => {
                 const kind = cellKind(v as boolean | 'partial');
                 return (
                   <td class="px-4 py-4 md:px-6">
