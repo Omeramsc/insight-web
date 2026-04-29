@@ -15,7 +15,17 @@ const icons = [Box, Layers, SunMedium];
 
 <section class="border-y border-border bg-surface py-16 md:py-24" aria-labelledby="problem-heading">
   <div class="mx-auto max-w-7xl px-4 md:px-8 lg:px-16">
-    <h2 id="problem-heading" class="sr-only">Why Insight exists</h2>
+    <div class="mx-auto max-w-2xl text-center mb-12" data-reveal>
+      <h2
+        id="problem-heading"
+        class="font-display text-3xl font-semibold tracking-tight text-text-primary md:text-4xl"
+      >
+        Sound familiar?
+      </h2>
+      <p class="mt-4 text-lg text-text-secondary">
+        These are the walls every Photoshop photographer hits. Insight was built to break through all three.
+      </p>
+    </div>
     <div class="grid gap-10 md:grid-cols-3">
       {t.problem.items.map((item, i) => {
         const Icon = icons[i] ?? Box;
@@ -25,7 +35,7 @@ const icons = [Box, Layers, SunMedium];
               <Icon class="h-6 w-6" aria-hidden="true" />
             </div>
             <h3 class="font-display text-lg font-semibold text-text-primary">{item.title}</h3>
-            <p class="text-sm leading-relaxed text-text-secondary">{item.body}</p>
+            <p class="text-base leading-relaxed text-text-secondary">{item.body}</p>
           </div>
         );
       })}

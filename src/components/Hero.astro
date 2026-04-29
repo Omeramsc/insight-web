@@ -28,14 +28,10 @@ const t = lang === 'ja' ? ja : en;
     <div
       class="absolute inset-0 bg-gradient-to-b from-ink via-ink/70 to-ink/20 md:bg-[linear-gradient(120deg,rgba(10,10,15,0.92)_0%,rgba(10,10,15,0.55)_45%,rgba(10,10,15,0.2)_100%)]"
     />
-    <div
-      class="hero-glow pointer-events-none absolute inset-0 opacity-40 mix-blend-screen transition-opacity duration-300"
-      aria-hidden="true"
-    />
   </div>
 
   <div class="relative z-10 mx-auto max-w-7xl px-4 py-20 text-center md:px-8 lg:px-16">
-    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-accent">
+    <p class="mb-6 inline-block rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.28em] text-accent backdrop-blur">
       {t.hero.label}
     </p>
     <h1 id="hero-heading" class="font-display text-4xl font-bold leading-tight tracking-tight text-text-primary md:text-6xl lg:text-7xl">
@@ -71,24 +67,3 @@ const t = lang === 'ja' ? ja : en;
   </div>
 </section>
 
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    var glow = document.querySelector('.hero-glow');
-    var section = document.querySelector('section[aria-labelledby="hero-heading"]');
-    if (!glow || !section) return;
-    section.addEventListener('pointermove', function (e) {
-      var r = section.getBoundingClientRect();
-      var x = ((e.clientX - r.left) / r.width) * 100;
-      var y = ((e.clientY - r.top) / r.height) * 100;
-      glow.style.background =
-        'radial-gradient(600px circle at ' + x + '% ' + y + '%, rgba(108,142,255,0.35), transparent 55%)';
-    });
-    section.addEventListener('pointerleave', function () {
-      glow.style.background =
-        'radial-gradient(600px circle at 50% 40%, rgba(108,142,255,0.22), transparent 55%)';
-    });
-    glow.style.background =
-      'radial-gradient(600px circle at 50% 40%, rgba(108,142,255,0.22), transparent 55%)';
-  });
-</script>

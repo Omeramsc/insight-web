@@ -55,6 +55,29 @@ const ogImageAbs = `${(t.urls?.canonicalBase ?? 'https://your-domain.netlify.app
       <slot />
     </main>
     <Footer lang={lang} />
+
+    <div
+      id="site-glow"
+      class="pointer-events-none fixed inset-0 z-0 opacity-0 mix-blend-screen transition-opacity duration-500"
+      aria-hidden="true"
+    ></div>
+
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var glow = document.getElementById('site-glow');
+        if (!glow) return;
+        glow.style.opacity = '1';
+        glow.style.background = 'radial-gradient(700px circle at 50% 50%, rgba(108,142,255,0.12), transparent 60%)';
+        document.addEventListener('pointermove', function (e) {
+          var x = (e.clientX / window.innerWidth) * 100;
+          var y = (e.clientY / window.innerHeight) * 100;
+          glow.style.background =
+            'radial-gradient(700px circle at ' + x + '% ' + y + '%, rgba(108,142,255,0.14), transparent 60%)';
+        });
+      });
+    </script>
+
     <script is:inline>
       (function () {
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;

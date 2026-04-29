@@ -19,6 +19,13 @@ export default {
         display: ['Geist', '"DM Sans"', 'system-ui', 'sans-serif'],
         mono: ['"Geist Mono"', 'ui-monospace', 'monospace'],
       },
+      fontSize: {
+        'body-sm':  ['1rem',    { lineHeight: '1.6' }],   // 16px — minimum body
+        'body':     ['1.125rem',{ lineHeight: '1.6' }],   // 18px — comfortable body
+        'subtitle': ['1.25rem', { lineHeight: '1.4' }],   // 20px — subtitles
+        'heading':  ['1.75rem', { lineHeight: '1.2' }],   // 28px — section headings
+        'display':  ['2rem',    { lineHeight: '1.1' }],   // 32px — display headings
+      },
       maxWidth: {
         '7xl': '80rem',
       },

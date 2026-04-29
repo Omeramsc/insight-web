@@ -10,7 +10,7 @@ const { lang } = Astro.props;
 const t = lang === 'ja' ? ja : en;
 ---
 
-<section class="bg-surface py-16 md:py-24" aria-labelledby="before-after-heading">
+<section class="bg-surface py-20 md:py-32" aria-labelledby="before-after-heading">
   <div class="mx-auto max-w-7xl px-4 md:px-8 lg:px-16">
     <div class="mx-auto max-w-3xl text-center" data-reveal>
       <h2 id="before-after-heading" class="font-display text-3xl font-semibold tracking-tight text-text-primary md:text-4xl">
@@ -19,28 +19,41 @@ const t = lang === 'ja' ? ja : en;
       <p class="mt-4 text-lg text-text-secondary">{t.beforeAfter.sectionSubtitle}</p>
     </div>
 
-    <div class="mt-14 flex flex-col gap-16">
-      <figure data-reveal class="space-y-4">
-        <figcaption class="text-center text-sm font-medium text-text-secondary">
-          {t.beforeAfter.pair1Label}
-        </figcaption>
+    <div class="mt-10 flex justify-center gap-3 flex-wrap" role="group" aria-label="Filter by photo type">
+      {['All', 'Portrait', 'Product'].map((cat) => (
+        <button
+          type="button"
+          data-filter={cat.toLowerCase()}
+          class:list={[
+            'rounded-full border px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface',
+            cat === 'All'
+              ? 'border-accent bg-accent text-ink'
+              : 'border-border bg-surface-2 text-text-secondary hover:border-accent hover:text-text-primary'
+          ]}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
+
+    <div class="mt-16 flex flex-col gap-24 md:gap-32">
+      <figure data-reveal data-category="portrait" class="space-y-0">
         <div class="relative" aria-label={`Before and after comparison: ${t.beforeAfter.pair1Label}`}>
           <img-comparison-slider class="rounded-xl">
             <img slot="first" src="/assets/before-1-raw.jpg" alt={t.beforeAfter.pair1BeforeAlt} width="1200" height="800" loading="lazy" />
             <img slot="second" src="/assets/after-1-edit.jpg" alt={t.beforeAfter.pair1AfterAlt} width="1200" height="800" loading="lazy" />
           </img-comparison-slider>
-         <div class="pointer-events-none absolute inset-x-0 top-4 flex justify-between px-4 text-xs font-bold uppercase tracking-wider text-text-primary">
+          <div class="pointer-events-none absolute inset-x-0 top-4 flex justify-between px-4 text-xs font-bold uppercase tracking-wider text-text-primary">
             <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairbefore}</span>
             <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairafter}</span>
           </div>
-          </div>
         </div>
+        <figcaption class="mt-4 text-center text-base font-medium text-text-secondary px-4">
+          {t.beforeAfter.pair1Label}
+        </figcaption>
       </figure>
 
-      <figure data-reveal class="space-y-4">
-        <figcaption class="text-center text-sm font-medium text-text-secondary">
-          {t.beforeAfter.pair2Label}
-        </figcaption>
+      <figure data-reveal data-category="portrait" class="space-y-0">
         <div class="relative" aria-label={`Before and after comparison: ${t.beforeAfter.pair2Label}`}>
           <img-comparison-slider class="rounded-xl">
             <img slot="first" src="/assets/before-2-raw.jpg" alt={t.beforeAfter.pair2BeforeAlt} width="1200" height="800" loading="lazy" />
@@ -51,12 +64,12 @@ const t = lang === 'ja' ? ja : en;
             <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairafter}</span>
           </div>
         </div>
+        <figcaption class="mt-4 text-center text-base font-medium text-text-secondary px-4">
+          {t.beforeAfter.pair2Label}
+        </figcaption>
       </figure>
 
-      <figure data-reveal class="space-y-4">
-        <figcaption class="text-center text-sm font-medium text-text-secondary">
-          {t.beforeAfter.pair3Label}
-        </figcaption>
+      <figure data-reveal data-category="product" class="space-y-0">
         <div class="relative" aria-label={`Before and after comparison: ${t.beforeAfter.pair3Label}`}>
           <img-comparison-slider class="rounded-xl">
             <img slot="first" src="/assets/before-banana-adobe.jpg" alt={t.beforeAfter.pair3BeforeAlt} width="1200" height="800" loading="lazy" />
@@ -67,9 +80,12 @@ const t = lang === 'ja' ? ja : en;
             <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pair3AfterLabel}</span>
           </div>
         </div>
-        <div class="mx-auto max-w-4xl space-y-3">
+        <figcaption class="mt-4 text-center text-base font-medium text-text-secondary px-4">
+          {t.beforeAfter.pair3Label}
+        </figcaption>
+        <div class="mx-auto mt-8 max-w-4xl space-y-3">
           <h3 class="text-center font-display text-lg font-semibold text-text-primary">{t.beforeAfter.zoomTitle}</h3>
-          <p class="text-center text-sm text-text-muted">{t.beforeAfter.zoomCaption}</p>
+          <p class="text-center text-base text-text-secondary">{t.beforeAfter.zoomCaption}</p>
           <div class="overflow-hidden rounded-xl border border-border">
             <img
               src="/assets/banana-zoom.jpg"
@@ -88,4 +104,27 @@ const t = lang === 'ja' ? ja : en;
 
 <script>
   import 'img-comparison-slider';
+
+  const buttons = document.querySelectorAll<HTMLButtonElement>('[data-filter]');
+  const figures = document.querySelectorAll<HTMLElement>('[data-category]');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const filter = (btn as HTMLButtonElement & { dataset: { filter: string } }).dataset.filter;
+
+      buttons.forEach((b) => {
+        const active = b === btn;
+        b.classList.toggle('bg-accent', active);
+        b.classList.toggle('text-ink', active);
+        b.classList.toggle('border-accent', active);
+        b.classList.toggle('bg-surface-2', !active);
+        b.classList.toggle('text-text-secondary', !active);
+      });
+
+      figures.forEach((fig) => {
+        const matches = filter === 'all' || fig.dataset.category === filter;
+        fig.style.display = matches ? '' : 'none';
+      });
+    });
+  });
 </script>
