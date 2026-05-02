@@ -1,9 +1,10 @@
 {
   "urls": {
-    "gumroad": "https://gumroad.com/l/PLACEHOLDER",
+    "gumroad": "https://5558697242856.gumroad.com/l/bhhwsy",
+    "luvetis": "https://luvetis.com",
     "youtubeId": "YOUR_VIDEO_ID",
     "contactEmail": "you@example.com",
-    "canonicalBase": "https://your-domain.netlify.app"
+    "canonicalBase": "https://luvetis.com"
   },
   "skipLink": "メインコンテンツへスキップ",
   "meta": {
@@ -15,10 +16,13 @@
     "description": "Adobe Photoshop での、AI を活用したアドバンテージ。"
   },
   "nav": {
+    "brand": "LUVETIS",
+    "product": "Insight for Photoshop",
     "features": "機能",
     "demo": "デモ",
     "pricing": "価格",
     "faq": "FAQ",
+    "luvetis": "ルベティス",
     "cta": "Insight を入手",
     "menuOpen": "メニューを開く",
     "menuClose": "閉じる"
@@ -120,7 +124,9 @@
     "pair1Label": "シームレスな generative fill — フォトリアルでグレインにマッチ",
     "pair2Label": "Insight の critique とライティング分解に沿ったフル編集",
     "pair3Label": "Adobe Generative Fill vs Insight — 同一プロンプト、同一画像",
-    "pair3BeforeLabel": "Adobe Native",
+    "pairbefore": "before",
+    "pairafter": "after",
+    "pair3BeforeLabel": "Adobe's partner models",
     "pair3AfterLabel": "Insight",
     "zoomTitle": "ズームクロップ — バナナテスト",
     "zoomCaption": "静的クロップ比較（詳細写真に差し替えてください）。",
@@ -161,7 +167,6 @@
     "subtitle": "同じキャンバス。統合の深さが違う。",
     "feature": "機能",
     "adobe": "Adobe ネイティブ",
-    "otherPlugins": "他プラグイン",
     "insight": "Insight",
     "rows": [
       {
@@ -221,7 +226,8 @@
     ],
     "yes": "あり",
     "no": "なし",
-    "partial": "一部"
+    "partial": "一部",
+    "otherPlugins": "他プラグイン"
   },
   "pricing": {
     "title": "Insight for Photoshop",
@@ -272,16 +278,17 @@
     ]
   },
   "footer": {
-    "brand": "Insight for Photoshop",
-    "linksTitle": "リンク",
+    "brand": "Insight by ルベティス",
+    "linksTitle": "サイトマップ",
     "legalTitle": "法的情報",
     "features": "機能",
     "demo": "デモ",
+    "luvetis": "ルベティス",
     "accessibility": "アクセシビリティ声明",
     "privacy": "プライバシーポリシー（簡易）",
     "contact": "お問い合わせ",
     "rights": "Insight は Adobe Inc. とは関係ありません。Adobe と Photoshop は Adobe Inc. の商標です。",
-    "copyright": "© 2026 [Your Name]. 無断転載を禁じます。"
+    "copyright": "© 2026 ルベティス. 無断転載を禁じます。"
   },
   "accessibility": {
     "pageTitle": "アクセシビリティ声明",

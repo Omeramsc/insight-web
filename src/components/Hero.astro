@@ -11,7 +11,7 @@ const t = lang === 'ja' ? ja : en;
 ---
 
 <section
-  class="relative flex min-h-[100svh] items-center justify-center overflow-hidden pt-24"
+  class="relative flex min-h-[100svh] items-center overflow-hidden pt-24"
   aria-labelledby="hero-heading"
 >
   <div class="pointer-events-none absolute inset-0 z-0">
@@ -26,69 +26,49 @@ const t = lang === 'ja' ? ja : en;
       role="presentation"
     />
     <div
-      class="absolute inset-0 bg-gradient-to-b from-ink via-ink/70 to-ink/20 md:bg-[linear-gradient(120deg,rgba(10,10,15,0.92)_0%,rgba(10,10,15,0.55)_45%,rgba(10,10,15,0.2)_100%)]"
+      class="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,12,22,0.9)_0%,rgba(8,12,22,0.72)_45%,rgba(8,12,22,0.8)_100%)] md:bg-[linear-gradient(100deg,rgba(8,12,22,0.95)_0%,rgba(8,12,22,0.84)_45%,rgba(8,12,22,0.45)_100%)]"
     />
-    <div
-      class="hero-glow pointer-events-none absolute inset-0 opacity-40 mix-blend-screen transition-opacity duration-300"
-      aria-hidden="true"
-    />
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(108,142,255,0.18)_0%,rgba(108,142,255,0)_58%)]" />
   </div>
 
-  <div class="relative z-10 mx-auto max-w-7xl px-4 py-20 text-center md:px-8 lg:px-16">
-    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-accent">
-      {t.hero.label}
-    </p>
-    <h1 id="hero-heading" class="font-display text-4xl font-bold leading-tight tracking-tight text-text-primary md:text-6xl lg:text-7xl">
-      <span class="block">{t.hero.h1_line1}</span>
-      <span class="block text-text-primary">{t.hero.h1_line2}</span>
-    </h1>
-    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary md:text-xl">
-      {t.hero.subtitle}
-    </p>
-    <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-      <a
-        href={`/${lang}/#demo`}
-        class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-accent px-8 py-3 text-base font-semibold text-ink shadow-lg shadow-accent/20 transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink sm:w-auto"
-      >
-        <svg aria-hidden="true" class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M8 5v14l11-7L8 5z"></path>
-        </svg>
-        {t.hero.cta_primary}
-      </a>
-      <a
-        href={t.urls.gumroad}
-        class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-surface/60 px-8 py-3 text-base font-semibold text-text-primary backdrop-blur transition hover:border-accent hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink sm:w-auto"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        {t.hero.cta_secondary}
-        <span aria-hidden="true">→</span>
-      </a>
+  <div class="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 md:px-8 lg:px-16">
+    <div class="mx-auto max-w-3xl">
+      <div class="inline-flex max-w-3xl flex-col rounded-2xl border border-white/15 bg-ink/45 p-6 text-left shadow-[0_20px_90px_rgba(6,12,28,0.45)] backdrop-blur-sm md:p-8">
+        <p class="mb-6 inline-block w-fit rounded-full border border-accent/40 bg-accent/15 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.28em] text-accent">
+          {t.hero.label}
+        </p>
+        <h1 id="hero-heading" class="font-display text-4xl font-bold leading-tight tracking-tight text-text-primary md:text-6xl">
+          <span class="block">{t.hero.h1_line1}</span>
+          <span class="block text-text-primary">{t.hero.h1_line2}</span>
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
+          {t.hero.subtitle}
+        </p>
+        <div class="mt-10 flex flex-col items-center justify-start gap-4 sm:flex-row">
+          <a
+            href={`/${lang}/#demo`}
+            class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-accent px-8 py-3 text-base font-semibold text-ink shadow-lg shadow-accent/25 transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink sm:w-auto"
+          >
+            <svg aria-hidden="true" class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7L8 5z"></path>
+            </svg>
+            {t.hero.cta_primary}
+          </a>
+          <a
+            href={t.urls.gumroad}
+            class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/30 bg-surface/70 px-8 py-3 text-base font-semibold text-text-primary backdrop-blur transition hover:border-accent hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink sm:w-auto"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {t.hero.cta_secondary}
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+        <p class="mt-8 text-sm text-white/70">
+          {t.hero.requirements}
+        </p>
+      </div>
     </div>
-    <p class="mt-8 text-sm text-text-muted">
-      {t.hero.requirements}
-    </p>
   </div>
 </section>
 
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    var glow = document.querySelector('.hero-glow');
-    var section = document.querySelector('section[aria-labelledby="hero-heading"]');
-    if (!glow || !section) return;
-    section.addEventListener('pointermove', function (e) {
-      var r = section.getBoundingClientRect();
-      var x = ((e.clientX - r.left) / r.width) * 100;
-      var y = ((e.clientY - r.top) / r.height) * 100;
-      glow.style.background =
-        'radial-gradient(600px circle at ' + x + '% ' + y + '%, rgba(108,142,255,0.35), transparent 55%)';
-    });
-    section.addEventListener('pointerleave', function () {
-      glow.style.background =
-        'radial-gradient(600px circle at 50% 40%, rgba(108,142,255,0.22), transparent 55%)';
-    });
-    glow.style.background =
-      'radial-gradient(600px circle at 50% 40%, rgba(108,142,255,0.22), transparent 55%)';
-  });
-</script>

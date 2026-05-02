@@ -24,7 +24,7 @@
 | Animations | **CSS scroll-driven animations** + minimal vanilla JS | No library needed, performant |
 | Icons | **Lucide icons** (via astro integration) | Consistent, MIT licensed |
 | Fonts | **Geist** (headings) + **DM Sans** (body) | Sharp, modern, professional — distinct from Topaz/Luminar |
-| Deployment | **Netlify** | Free tier, drag-and-drop or CLI, automatic HTTPS, branch previews |
+| Deployment | **Cloudflare Pages** | Integrated DNS, fast global edge, free tier, automatic HTTPS |
 | i18n | **Astro i18n routing** (`/en/`, `/ja/`) | Built-in, no extra library |
 
 ### Project structure
@@ -68,8 +68,8 @@ insight-website/
 │       └── accessibility.astro  ← required for Israeli law
 ├── astro.config.mjs
 ├── tailwind.config.mjs
-├── package.json
-└── netlify.toml
+├── wrangler.toml
+└── package.json
 ```
 
 ---
@@ -131,7 +131,7 @@ Load via Google Fonts in `Base.astro`:
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <!-- Canonical -->
-  <link rel="canonical" href="https://your-domain.netlify.app/{lang}/">
+  <link rel="canonical" href="https://luvetis.com/{lang}/">
   <!-- Accessibility: skip link target -->
 </head>
 <body class="bg-ink text-text-primary">
@@ -574,31 +574,23 @@ npm run dev          # → localhost:4321
 # Production build
 npm run build        # → ./dist/
 
-# Deploy to Netlify (CLI)
-npm install -g netlify-cli
-netlify deploy --dir dist --prod
-
-# Or: drag the dist/ folder to netlify.com/drop
+# Deploy to Cloudflare Pages (CLI)
+npm install -g wrangler
+npx wrangler pages deploy dist
 ```
 
-### `netlify.toml` (full)
+### `wrangler.toml` (Unified Assets format)
 ```toml
-[build]
-  command = "npm run build"
-  publish = "dist"
+name = "insight-web"
+compatibility_date = "2024-05-02"
 
-[[redirects]]
-  from = "/"
-  to = "/en/"
-  status = 301
+[assets]
+directory = "./dist"
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
+# Cloudflare Pages handles redirects via public/_redirects
+# and headers via public/_headers
 ```
+
 
 ---
 
