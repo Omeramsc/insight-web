@@ -131,7 +131,7 @@ Load via Google Fonts in `Base.astro`:
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <!-- Canonical -->
-  <link rel="canonical" href="https://your-domain.netlify.app/{lang}/">
+  <link rel="canonical" href="https://luvetis.com/{lang}/">
   <!-- Accessibility: skip link target -->
 </head>
 <body class="bg-ink text-text-primary">

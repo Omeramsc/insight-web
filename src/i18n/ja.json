@@ -1,9 +1,10 @@
 {
   "urls": {
     "gumroad": "https://5558697242856.gumroad.com/l/bhhwsy",
+    "luvetis": "https://luvetis.com",
     "youtubeId": "YOUR_VIDEO_ID",
     "contactEmail": "you@example.com",
-    "canonicalBase": "https://your-domain.netlify.app"
+    "canonicalBase": "https://luvetis.com"
   },
   "skipLink": "メインコンテンツへスキップ",
   "meta": {
@@ -15,10 +16,13 @@
     "description": "Adobe Photoshop での、AI を活用したアドバンテージ。"
   },
   "nav": {
+    "brand": "LUVETIS",
+    "product": "Insight for Photoshop",
     "features": "機能",
     "demo": "デモ",
     "pricing": "価格",
     "faq": "FAQ",
+    "luvetis": "ルベティス",
     "cta": "Insight を入手",
     "menuOpen": "メニューを開く",
     "menuClose": "閉じる"
@@ -274,16 +278,17 @@
     ]
   },
   "footer": {
-    "brand": "Insight for Photoshop",
-    "linksTitle": "リンク",
+    "brand": "Insight by ルベティス",
+    "linksTitle": "サイトマップ",
     "legalTitle": "法的情報",
     "features": "機能",
     "demo": "デモ",
+    "luvetis": "ルベティス",
     "accessibility": "アクセシビリティ声明",
     "privacy": "プライバシーポリシー（簡易）",
     "contact": "お問い合わせ",
     "rights": "Insight は Adobe Inc. とは関係ありません。Adobe と Photoshop は Adobe Inc. の商標です。",
-    "copyright": "© 2026 [Your Name]. 無断転載を禁じます。"
+    "copyright": "© 2026 ルベティス. 無断転載を禁じます。"
   },
   "accessibility": {
     "pageTitle": "アクセシビリティ声明",
