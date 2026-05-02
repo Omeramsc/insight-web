@@ -579,11 +579,13 @@ npm install -g wrangler
 npx wrangler pages deploy dist
 ```
 
-### `wrangler.toml` (minimal for Pages)
+### `wrangler.toml` (Unified Assets format)
 ```toml
 name = "insight-web"
-pages_build_output_dir = "dist"
 compatibility_date = "2024-05-02"
+
+[assets]
+directory = "./dist"
 
 # Cloudflare Pages handles redirects via public/_redirects
 # and headers via public/_headers
