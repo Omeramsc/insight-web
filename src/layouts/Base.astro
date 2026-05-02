@@ -16,9 +16,9 @@ interface Props {
 const { lang, title, description, ogTitle, ogDescription, canonicalPath } = Astro.props;
 const t = lang === 'ja' ? ja : en;
 const canonical =
-  (t.urls?.canonicalBase ?? 'https://your-domain.netlify.app').replace(/\/$/, '') +
+  (t.urls?.canonicalBase ?? 'https://luvetis.com').replace(/\/$/, '') +
   (canonicalPath ?? `/${lang}/`);
-const ogImageAbs = `${(t.urls?.canonicalBase ?? 'https://your-domain.netlify.app').replace(/\/$/, '')}/og-image.jpg`;
+const ogImageAbs = `${(t.urls?.canonicalBase ?? 'https://luvetis.com').replace(/\/$/, '')}/og-image.jpg`;
 ---
 
 <!doctype html>
