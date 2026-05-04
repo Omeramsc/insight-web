@@ -1,19 +1,20 @@
 {
   "urls": {
-    "gumroad": "https://5558697242856.gumroad.com/l/bhhwsy",
+    "insightCheckout": "https://luvetis.lemonsqueezy.com/checkout/buy/ee4d9134-0984-40ef-9c9c-6d391fc78871",
+    "snapselectCheckout": "https://luvetis.lemonsqueezy.com/checkout/buy/c7b29e2d-4bfd-4eef-a69c-4664d18dc773",
     "luvetis": "https://luvetis.com",
-    "youtubeId": "YOUR_VIDEO_ID",
-    "contactEmail": "you@example.com",
+    "youtubeId": "UJ-Lmyt6tao",
+    "contactEmail": "insight@luvetis.com",
     "canonicalBase": "https://luvetis.com"
   },
   "skipLink": "Skip to main content",
   "meta": {
-    "title": "Insight — AI Photography Assistant for Photoshop",
-    "description": "The most comprehensive AI integration ever built for Adobe Photoshop. Generative fill, smart critique, lighting analysis, and more."
+    "title": "Insight — Professional Photography Assistant for Photoshop",
+    "description": "Enrich your imagination and achieve more with less. High-resolution generative fill, smart critique, and technique coaching."
   },
   "og": {
     "title": "Insight for Photoshop",
-    "description": "Your AI-powered unfair advantage in Adobe Photoshop."
+    "description": "Your vision, amplified in Adobe Photoshop."
   },
   "nav": {
     "brand": "LUVETIS",
@@ -28,46 +29,45 @@
     "menuClose": "Close menu"
   },
   "hero": {
-    "label": "Adobe Photoshop Plugin",
-    "h1_line1": "Your AI co-pilot.",
-    "h1_line2": "Inside Photoshop.",
-    "subtitle": "Insight scans your photo, analyzes your pixels, and helps you reach photorealistic 4K results — without leaving your workspace.",
-    "cta_primary": "Watch Demo",
+    "label": "Built by a Photographer, for Photographers",
+    "h1_line1": "Expand your",
+    "h1_line2": "vision.",
+    "subtitle": "Enrich your imagination and achieve more with less. Insight helps you refine your lighting, critique your composition, and expand your canvas—all within a seamless 4K workflow.",
+    "cta_primary": "Watch the Workflow",
     "cta_secondary": "Get Insight",
-    "requirements": "Requires Photoshop 2024+  ·  Works with your own Gemini API key  ·  No subscription"
+    "requirements": "Requires Photoshop 2024+  ·  Professional BYOK Model  ·  No Subscription"
   },
   "problem": {
     "items": [
       {
-        "title": "Credits run out fast",
-        "body": "High-iteration photography workflows can exhaust monthly credit buckets quickly"
+        "title": "Don't let credits limit you",
+        "body": "Traditional tools lock your imagination behind monthly caps. Insight gives you the freedom to iterate as much as you need."
       },
       {
-        "title": "Tutorials are all over the place",
-        "body": "You perform the steps, but you don't reach the desired result"
+        "title": "Achieve more with less",
+        "body": "Turn hours of tedious technical work into seconds of creative refinement."
       },
       {
-        "title": "You want to get better - you just don't know how",
-        "body": "No one gives you an honest feedback about your lighting, composition, or color-grading"
+        "title": "An objective perspective",
+        "body": "Get the honest, technical feedback you need to perfect your work privately, on your own terms."
       }
     ]
   },
   "features": {
-    "sectionTitle": "Built by photographers, for photographers",
-    "sectionSubtitle": "Six modules that stay in your layer stack — from generative work to critique you can act on.",
+    "sectionTitle": "Your Professional Toolkit",
+    "sectionSubtitle": "Multiple modules that stay in your layer stack — from generative work to critique you can act on.",
     "items": [
       {
-        "badge": "Generative AI",
+        "badge": "Imagination",
         "title": "Advanced Generative Fill",
-        "description": "Fill, create, and extend, with a workflow that follows your prefernces, and help you get better results. Less guesswork, accurate results.",
+        "description": "Enrich your frames and expand your canvas with high-resolution results that respect your original photography.",
         "bullets": [
           "Camera-aware context from EXIF",
-          "Guided prompt refinement — level up your prompt, keep creative control",
-          "High-Resolution Results, up to 4K",
-          "Multiple varied generations at the same time",
-          "Content and context aware"
+          "No prompt engineering required — guided refinement translates your thoughts into perfect prompts",
+          "High-Resolution results up to 4K",
+          "Stays in your layer stack, non-destructive"
         ],
-        "imageAlt": "Insight Generative Fill panel in Photoshop"
+        "imageAlt": "Insight Advanced Generative Fill panel in Photoshop"
       },
       {
         "badge": "Ideation",
@@ -75,6 +75,7 @@
         "description": "Generate up to ten variations in one run to compare ideas faster and pick the strongest direction.",
         "bullets": [
           "Compare composition, color, and detail at a glance",
+          "Save time by generating multiple options simultaneously",
           "Pick a winner, or pick them all"
         ],
         "imageAlt": "multi-variance preview grid"
@@ -82,7 +83,7 @@
       {
         "badge": "Similarity",
         "title": "Reference-based Generation",
-        "description": "Generate using up to 14 reference photos.",
+        "description": "Generate using up to 13 reference photos.",
         "bullets": [
           "Generate an item, piece of clothes, a character, or a background from a reference photo",
           "Modify the style or color of the photo to match the reference photo"
@@ -96,29 +97,30 @@
         "bullets": [
           "Compare photos side-by-side",
           "Rank them on composition, lighting, and impact",
-          "Client picks and portfolio edits made easy and decisive"
+          "Choosing from similar photos or similar edits is made easy"
         ],
         "imageAlt": "dynamic photo compare UI"
       },
       {
-        "badge": "Feedback",
-        "title": "Expert Critique",
-        "description": "Get useful feedback that focuses on the strong and weak points of the photo.",
+        "badge": "Honest Feedback",
+        "title": "Objective Analysis",
+        "description": "Get technical feedback that focuses on the physics of light, composition, and impact—privately.",
         "bullets": [
-          "Actionable notes instead of generic praise",
-          "Help pointing out things that are not working well"
+          "Actionable technical notes, not generic praise",
+          "Identify lighting inconsistencies instantly",
+          "Adjustable critique tone (gentle, brutal, elaborate, or concise)"
         ],
-        "imageAlt": "critique and lighting breakdown"
+        "imageAlt": "technical breakdown and lighting analysis"
       },
       {
-        "badge": "Learning",
-        "title": "Personal Photoshop Tutor",
-        "description": "Context-aware coaching that sees your layers, explains how to achieve the wanted result, and helps you build repeatable technique.",
+        "badge": "Technique",
+        "title": "Personal Skill Coach",
+        "description": "Context-aware guidance that analyzes your layers and explains how to achieve professional results manually over time.",
         "bullets": [
-          "Retain and upgrade your skills",
-          "Short explanations that respect your time"
+          "Upgrade your skills, don't just replace them",
+          "Short, high-impact explanations"
         ],
-        "imageAlt": "tutor guidance in panel"
+        "imageAlt": "coaching and technique guidance"
       },
       {
         "badge": "Long-term",
@@ -132,15 +134,15 @@
     ]
   },
   "beforeAfter": {
-    "sectionTitle": "Proof in the pixels",
-    "sectionSubtitle": "Drag the handle or use arrow keys. Every pair uses descriptive alt text for screen readers.",
-    "pair1Label": "Seamless generative fill — maintaining quality and colors",
-    "pair2Label": "Change the background seamlessly, modifying the lightning accordingly",
-    "pair3Label": "Adobe Generative Fill vs Insight — same prompt, same image, different quality",
+    "sectionTitle": "Technical proof",
+    "sectionSubtitle": "See how Insight assists in solving common photographic challenges.",
+    "pair1Label": "Elevating environments and replacing elements—maintaining original quality",
+    "pair2Label": "Seamlessly compositing subjects with perfect lighting adjustment",
+    "pair3Label": "Comparing technical clarity—Insight vs standard models",
     "pairbefore": "before",
     "pairafter": "after",
-    "pair3BeforeLabel": "Adobe's partner models",
-    "pair3AfterLabel": "Insight",
+    "pair3BeforeLabel": "Standard Fill",
+    "pair3AfterLabel": "Insight Assistance",
     "zoomTitle": "Retain full image quality",
     "zoomCaption": "Even when generating the whole Canvas size, image quality is maintained.",
     "pair1BeforeAlt": "Portrait photo as shot from camera, unedited",
@@ -183,14 +185,14 @@
     "insight": "Insight",
     "rows": [
       { "label": "4K access, no lock-in", "adobe": "partial", "insight": true },
-      { "label": "Up to 14 references", "adobe": "partial", "insight": true },
+      { "label": "Up to 13 references", "adobe": "partial", "insight": true },
       { "label": "Guided prompt refinement", "adobe": false, "insight": true },
       { "label": "Usage-based cost control", "adobe": false, "insight": true },
       { "label": "10-variant generation", "adobe": false, "insight": true },
       { "label": "Multi-document compare", "adobe": false, "insight": true },
       { "label": "Private tutor", "adobe": false, "insight": true },
       { "label": "Pattern analysis over time", "adobe": false, "insight": true },
-      { "label": "Uses your own Gemini API key", "adobe": false, "insight": true }
+      { "label": "Leverage your own Gemini access", "adobe": false, "insight": true }
     ],
     "yes": "Yes",
     "no": "No",
@@ -201,15 +203,15 @@
     "price": "$15",
     "subtitle": "One-time purchase · No subscription",
     "bullets": [
-      "All 6 feature modules",
+      "All feature modules",
       "Lifetime updates (current version)",
-      "Use your own Gemini API key - transparent usage-based cost",
+      "Leverage your own Gemini access - transparent usage-based cost",
       "Pay only for what you use",
       "Works with Photoshop 2024+",
       "Windows & Mac"
     ],
     "cta": "Get Insight",
-    "note1": "You'll be redirected to Gumroad for secure checkout.",
+    "note1": "Secure checkout powered by Lemon Squeezy.",
     "note2": "Use your own API key. Pay per generation. No monthly generation cap from Insight."
   },
   "faq": {
@@ -237,7 +239,7 @@
       },
       {
         "question": "Can I get a refund?",
-        "answer": "Refer to Gumroad's refund policy. If you have a technical issue, contact the email listed in the footer."
+        "answer": "Refer to Lemon Squeezy's refund policy. If you have a technical issue, contact the email listed in the footer."
       },
       {
         "question": "How is this different from Photoshop's native AI?",
@@ -257,36 +259,214 @@
       }
     ]
   },
+  "about": {
+    "title": "A note from the developer",
+    "subtitle": "Enriching imagination, one pixel at a time.",
+    "text1": "I've spent over 15 years behind a lens, balancing the art of photography with the technical demands of professional retouching. I built Insight because I wanted a tool that would help photographers enrich their imagination and achieve more with less effort.",
+    "text2": "As a solo developer and a photographer first, my goal was simple: create a technical assistant that handles the hurdles of editing so you can stay focused on your creative vision. Insight is a passion project born from the belief that professional tools should be accessible, empowering, and above all, respectful of the artist.",
+    "signature": "Luvetis"
+  },
   "footer": {
     "brand": "Insight by Luvetis",
     "linksTitle": "Sitemap",
     "legalTitle": "Legal",
-    "features": "Features",
-    "demo": "Demo",
     "luvetis": "Luvetis",
+    "snapselect": "SnapSelect (Lightroom)",
+    "insight": "Insight (Photoshop)",
     "accessibility": "Accessibility Statement",
-    "privacy": "Privacy Policy (minimal)",
+    "privacy": "Privacy Policy",
     "contact": "Contact",
-    "rights": "Insight is not affiliated with Adobe Inc. Adobe and Photoshop are trademarks of Adobe Inc.",
+    "rights": "Insight and SnapSelect are not affiliated with Adobe Inc. Adobe, Photoshop, and Lightroom are trademarks of Adobe Inc.",
     "copyright": "© 2026 Luvetis. All rights reserved."
   },
   "accessibility": {
     "pageTitle": "Accessibility Statement",
-    "metaDescription": "Accessibility statement for the Insight for Photoshop marketing website (IS 5568 / WCAG 2.1 AA goals).",
-    "intro": "This site is committed to making this website accessible to people with disabilities, in accordance with Israeli Standard IS 5568 (based on WCAG 2.1 AA).",
-    "featuresTitle": "Accessibility features on this site",
-    "features": [
-      "All images include descriptive alternative text",
-      "The site is keyboard-navigable",
-      "Color contrast meets WCAG AA standards for primary text and interactive states we control",
-      "Before/after comparison sliders are operable with keyboard arrow keys",
-      "Videos are embedded with titles; captions are available on YouTube when provided by the publisher",
-      "Skip-to-content link is available at the top of all pages"
+    "metaDescription": "Accessibility declaration for Insight for Photoshop (IS 5568 / WCAG 2.1 Level AA compliance).",
+    "intro": "Luvetis is committed to providing a website that is accessible to the widest possible audience, regardless of technology or ability. We are actively working to increase the accessibility and usability of our website and in doing so adhere to many of the available standards and guidelines.",
+    "complianceStatus": "This website is designed to comply with Israeli Standard IS 5568 and the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA.",
+    "measuresTitle": "Measures taken to ensure accessibility",
+    "measures": [
+      "Semantic HTML structure for screen reader compatibility.",
+      "Full keyboard navigation support (tested with Chrome/NVDA).",
+      "Sufficient color contrast for all critical text and UI elements.",
+      "Alternative text for all meaningful images.",
+      "Skip-to-content links on every page.",
+      "Clear focus indicators for interactive elements."
     ],
-    "limitationsTitle": "Known limitations",
-    "limitations": "Embedded video depends on YouTube's player. If you encounter player-specific barriers, please let us know. Some marketing imagery is decorative placeholders until final assets ship.",
-    "feedbackTitle": "Feedback",
-    "feedback": "If you encounter accessibility barriers, please contact us at the email shown below. We aim to respond within 5 business days.",
-    "lastReviewed": "Last reviewed: April 13, 2026"
+    "limitationsTitle": "Known limitations and exclusions",
+    "limitations": "Despite our best efforts to ensure accessibility of this website, there may be some limitations. Our product demo is hosted on YouTube; while we provide titles and descriptions, full closed captioning may depend on third-party automated systems. Some legacy or decorative images may lack detailed descriptions.",
+    "feedbackTitle": "Feedback & Contact Information",
+    "feedbackIntro": "We welcome your feedback on the accessibility of our website. If you encounter any accessibility barriers or have suggestions for improvement, please contact our Accessibility Coordinator:",
+    "coordinatorName": "Accessibility Coordinator: Luvetis Team",
+    "coordinatorEmail": "Contact Email: insight@luvetis.com",
+    "coordinatorNote": "We aim to respond to accessibility feedback within 2-5 business days.",
+    "lastUpdated": "This statement was last updated on May 2, 2026."
+  },
+  "terms": {
+    "pageTitle": "Terms of Use & EULA",
+    "metaDescription": "End User License Agreement (EULA) for Insight Adobe Photoshop Plugin.",
+    "intro": "IMPORTANT—READ CAREFULLY: This End User License Agreement (\"EULA\") is a legal agreement between you (either an individual or a single entity) and Luvetis (\"Developer\") for the Insight Adobe Photoshop Plugin (\"Software\").",
+    "acceptance": "By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this EULA. If you do not agree to the terms of this EULA, do not install or use the Software.",
+    "sections": [
+      {
+        "title": "1. GRANT OF LICENSE",
+        "content": "The Developer grants you a revocable, non-exclusive, non-transferable, limited license to download, install, and use the Software solely for your personal or commercial purposes strictly in accordance with the terms of this Agreement. This license does not grant you the right to sub-license, distribute, reverse-engineer, or sell the Software."
+      },
+      {
+        "title": "2. THIRD-PARTY SERVICES (GOOGLE GEMINI API)",
+        "content": "The Software acts as a bridge plugin interfacing with third-party Artificial Intelligence (AI) services, specifically the Google Gemini API (\"Third-Party Service\").",
+        "bullets": [
+          "External Dependencies: You acknowledge that the Software's functionality relies on the continued availability, rules, and pricing structure of the Third-Party Service.",
+          "Your Own Credentials: The Software may require you to provide your own API Key. You are solely responsible for acquiring this key, abiding by Google's Terms of Service, and paying any associated usage costs directly to the Third-Party Service.",
+          "No Uptime Guarantee: The Developer has no control over the availability, latency, or functionality of the Google Gemini API and is not liable for any service interruptions."
+        ]
+      },
+      {
+        "title": "3. AI OUTPUT AND COPYRIGHT DISCLAIMER",
+        "content": "The Software is designed to facilitate the generation of images, text, and other content (\"Output\") via AI.",
+        "bullets": [
+          "No Liability for Content: The Developer is not responsible for the Output generated. AI systems are unpredictable and may generate offensive, inaccurate, or copyrighted material.",
+          "Responsibility of Use: You are entirely responsible for the prompts you enter and the Output you produce. You agree not to use the Software to generate illegal, hateful, or abusive content.",
+          "Copyright Status: The Developer makes no guarantees regarding the copyrightability or ownership of the AI-generated Output."
+        ]
+      },
+      {
+        "title": "4. PRIVACY AND DATA HANDLING",
+        "bullets": [
+          "Local Storage: The Software stores your API key locally on your device. The Developer does not collect, transmit, or store your API keys on their own servers.",
+          "Data Sent to Third Parties: To function, the Software transmits image data from your Photoshop canvas and text prompts directly to Google. You consent to this transmission and acknowledge that this data is governed by Google's Privacy Policy. The Developer does not act as an intermediary for this data."
+        ]
+      },
+      {
+        "title": "5. DISCLAIMER OF WARRANTIES",
+        "content": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "note": "Special note regarding Adobe Photoshop: Software crashes or unexpected behavior within Adobe Photoshop may occur. The Developer is not responsible for any lost work, corrupted files, or project delays."
+      },
+      {
+        "title": "6. LIMITATION OF LIABILITY",
+        "content": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF THE DEVELOPER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES."
+      },
+      {
+        "title": "7. ADOBE DISCLAIMER",
+        "content": "This EULA is strictly between you and the Developer. Adobe Systems Incorporated (\"Adobe\") is not a party to this EULA, is not responsible for the Software, and provides no warranty or support for the Software."
+      },
+      {
+        "title": "8. TERMINATION",
+        "content": "This EULA is effective until terminated. Your rights under this EULA will terminate automatically without notice from the Developer if you fail to comply with any of its terms. Upon termination, you must cease all use of the Software and delete all copies."
+      },
+      {
+        "title": "9. GOVERNING LAW",
+        "content": "This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which the Developer resides, without regard to its conflict of law provisions."
+      }
+    ],
+    "version": "Version: 1.0 | Effective Date: April 19, 2026"
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy",
+    "metaDescription": "Privacy Policy for Insight for Photoshop and Luvetis website.",
+    "intro": "Luvetis (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website and use the Insight Adobe Photoshop Plugin.",
+    "sections": [
+      {
+        "title": "1. DATA COLLECTION & USAGE",
+        "content": "We do not collect personal information unless you voluntarily provide it to us (for example, by sending us an email). Our website may use basic, anonymized analytics to understand how visitors interact with our site and to improve the user experience."
+      },
+      {
+        "title": "2. THE PLUGIN (INSIGHT)",
+        "content": "Insight is designed with privacy in mind. It is a \"bring-your-own-key\" (BYOK) tool, meaning it stores your Gemini API key locally on your device. We do not collect, transmit, or store your API keys or your Photoshop canvas data on our own servers."
+      },
+      {
+        "title": "3. THIRD-PARTY SERVICES",
+        "content": "To provide its features, the Software interacts with the following third-party services:",
+        "bullets": [
+          "Google Gemini API: Image data and text prompts are transmitted directly to Google for processing. This data is governed by Google's Privacy Policy and Terms of Service.",
+          "Lemon Squeezy: All purchases and licensing are handled by Lemon Squeezy. They collect payment information and email addresses for license delivery. Please refer to the Lemon Squeezy Privacy Policy for details."
+        ]
+      },
+      {
+        "title": "4. DATA SECURITY",
+        "content": "We implement reasonable security measures to protect the limited information we may have (such as email communications) from unauthorized access or disclosure."
+      },
+      {
+        "title": "5. YOUR RIGHTS",
+        "content": "Depending on your location, you may have rights regarding your personal data, including the right to access, correct, or request the deletion of any information you have shared with us via direct contact."
+      },
+      {
+        "title": "6. CHANGES TO THIS POLICY",
+        "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date."
+      }
+    ],
+    "version": "Last Updated: May 2, 2026"
+  },
+  "snapselect": {
+    "nav": {
+      "product": "SnapSelect for Lightroom"
+    },
+    "hero": {
+      "h1_line1": "Client Selection",
+      "h1_line2": "Automation.",
+      "subtitle": "Turn scattered filename lists into flagged photos in a second. SnapSelect instantly parses chaotic filenames, numbers, and client notes that are all over the place, automatically marking the right photos in your catalog.",
+      "cta_primary": "Get SnapSelect",
+      "requirements": "Requires Adobe Lightroom Classic  ·  Mac & Windows"
+    },
+    "features": {
+      "sectionTitle": "Eliminate the manual grind",
+      "sectionSubtitle": "No more hunting for filenames. Drop the text, click a button, and move on.",
+      "items": [
+        {
+          "badge": "Smart Parsing",
+          "title": "Intelligent Text Detection",
+          "description": "Clients send confusing lists (A7_543, DSC-03-DSC-06, 124-000543). SnapSelect doesn't care. It detects and filters exactly what you need, ignoring the junk text.",
+          "bullets": [
+            "Handles multiple file naming conventions",
+            "Ignores conversational text",
+            "Instant results"
+          ],
+          "imageAlt": "SnapSelect parsing UI"
+        },
+        {
+          "badge": "Privacy",
+          "title": "Private Client Metadata",
+          "description": "Inject client names and special editing requests directly into a private Lightroom metadata field.",
+          "bullets": [
+            "Never leaks into the final export",
+            "Keeps all info right on the photo",
+            "No more switching between emails and catalogs"
+          ],
+          "imageAlt": "Lightroom metadata panel showing SnapSelect custom fields"
+        },
+        {
+          "badge": "Workflow",
+          "title": "Total Marking Control",
+          "description": "Apply custom flags, ratings, or color labels. Override existing marks to ensure the final selection is pristine and ready for export.",
+          "bullets": [
+            "Override existing flags",
+            "Set Star Ratings & Color Labels",
+            "Flexible marking options"
+          ],
+          "imageAlt": "SnapSelect marking options UI"
+        }
+      ]
+    },
+    "pricing": {
+      "title": "SnapSelect for Lightroom",
+      "price": "$5",
+      "subtitle": "One-time purchase · No subscription",
+      "bullets": [
+        "Lifetime updates (current version)",
+        "Works with Adobe Lightroom Classic",
+        "Windows & Mac"
+      ],
+      "cta": "Get SnapSelect",
+      "note1": "Secure checkout powered by Lemon Squeezy.",
+      "note2": "Save hours of tedious manual selection work on every project."
+    },
+    "demo": {
+      "sectionLabel": "Product demo video",
+      "title": "See it in action",
+      "subtitle": "Watch SnapSelect turn a messy client list into a perfectly flagged catalog in seconds.",
+      "play": "Load and play video",
+      "iframeTitle": "SnapSelect for Lightroom — product demo",
+      "youtubeId": "edkuLnAePeo"
+    }
   }
 }

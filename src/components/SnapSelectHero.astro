@@ -1,0 +1,60 @@
+---
+import en from '../i18n/en.json';
+import ja from '../i18n/ja.json';
+
+interface Props {
+  lang: 'en' | 'ja';
+}
+
+const { lang } = Astro.props;
+const t = lang === 'ja' ? ja : en;
+---
+
+<section
+  class="relative flex min-h-[100svh] items-center overflow-hidden pt-24"
+  aria-labelledby="hero-heading"
+>
+  <div class="pointer-events-none absolute inset-0 z-0">
+    <div
+      class="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,14,10,0.9)_0%,rgba(18,14,10,0.72)_45%,rgba(18,14,10,0.8)_100%)] md:bg-[linear-gradient(100deg,rgba(18,14,10,0.95)_0%,rgba(18,14,10,0.84)_45%,rgba(18,14,10,0.45)_100%)]"
+    ></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(245,158,11,0.10)_0%,rgba(245,158,11,0)_60%)]"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 md:px-8 lg:px-16">
+    <div class="mx-auto max-w-3xl">
+      <div class="relative overflow-hidden inline-flex max-w-3xl flex-col rounded-2xl border border-white/15 bg-ink/75 p-6 text-left shadow-[0_20px_90px_rgba(6,12,28,0.45)] backdrop-blur-xl md:p-8">
+        <div class="absolute inset-0 -z-10 pointer-events-none opacity-15">
+          <img
+            src="/assets/snapselect-icon.png"
+            alt=""
+            class="h-full w-full object-cover filter blur-md"
+            aria-hidden="true"
+          />
+        </div>
+
+        <h1 id="hero-heading" class="font-display text-4xl font-bold leading-tight tracking-tight text-text-primary md:text-6xl">
+          <span class="block shimmer-text">{t.snapselect.hero.h1_line1}</span>
+          <span class="block shimmer-text">{t.snapselect.hero.h1_line2}</span>
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
+          {t.snapselect.hero.subtitle}
+        </p>
+        <div class="mt-10 flex flex-col items-center justify-start gap-4 sm:flex-row">
+          <a
+            href={`/${lang}/snapselect#features`}
+            class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-amber-500 px-8 py-3 text-base font-semibold text-ink shadow-lg shadow-amber-500/25 transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-ink sm:w-auto"
+          >
+            <svg aria-hidden="true" class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7L8 5z"></path>
+            </svg>
+            {t.snapselect.hero.cta_primary}
+          </a>
+        </div>
+        <p class="mt-8 text-sm text-white/70">
+          {t.snapselect.hero.requirements}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

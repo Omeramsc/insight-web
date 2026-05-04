@@ -1,0 +1,44 @@
+---
+import en from '../i18n/en.json';
+import ja from '../i18n/ja.json';
+
+interface Props {
+  lang: 'en' | 'ja';
+}
+
+const { lang } = Astro.props;
+const t = lang === 'ja' ? ja : en;
+---
+
+<section id="about" class="relative overflow-hidden py-24 sm:py-32">
+  <!-- Subtle gradient background -->
+  <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_50%,rgba(108,142,255,0.03),transparent_70%)]"></div>
+
+  <div class="mx-auto max-w-3xl px-6" data-reveal>
+    <div class="flex flex-col items-center text-center">
+      <div class="mb-6 inline-flex items-center rounded-full border border-border/50 bg-surface/50 px-4 py-1.5 text-sm font-medium text-accent">
+        {t.about.title}
+      </div>
+      
+      <h2 class="font-display text-display text-text-primary mb-8 tracking-tight">
+        {t.about.subtitle}
+      </h2>
+
+      <div class="space-y-6 text-left font-sans text-body text-text-secondary leading-relaxed">
+        <p>
+          {t.about.text1}
+        </p>
+        <p>
+          {t.about.text2}
+        </p>
+      </div>
+
+      <div class="mt-12 flex flex-col items-center">
+        <div class="h-px w-12 bg-border/50 mb-6"></div>
+        <p class="font-display text-lg font-semibold italic text-text-primary">
+          {t.about.signature}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

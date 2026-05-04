@@ -5,9 +5,10 @@ import ja from '../i18n/ja.json';
 
 interface Props {
   lang: 'en' | 'ja';
+  product?: 'insight' | 'snapselect';
 }
 
-const { lang } = Astro.props;
+const { lang, product = 'insight' } = Astro.props;
 const t = lang === 'ja' ? ja : en;
 const mail = `mailto:${t.urls.contactEmail}`;
 ---
@@ -20,12 +21,14 @@ const mail = `mailto:${t.urls.contactEmail}`;
           <img src="/assets/logo.svg" alt="" width="120" height="32" class="h-8 w-auto" />
         </a>
         <p class="text-sm text-text-secondary">{t.footer.brand}</p>
-        <LanguageSwitcher lang={lang} />
+        <LanguageSwitcher lang={lang} product={product} />
       </div>
       <div class="grid gap-10 sm:grid-cols-2">
         <div>
           <p class="text-xs font-semibold uppercase tracking-wider text-text-muted">{t.footer.linksTitle}</p>
           <ul class="mt-4 space-y-2 text-sm text-text-secondary">
+            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={`/${lang}/`}>{t.footer.insight}</a></li>
+            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={`/${lang}/snapselect/`}>{t.footer.snapselect}</a></li>
             <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={`/${lang}/#features`}>{t.footer.features}</a></li>
             <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={`/${lang}/#demo`}>{t.footer.demo}</a></li>
             <li>
@@ -40,12 +43,11 @@ const mail = `mailto:${t.urls.contactEmail}`;
             </li>
             <li>
               <a
-                href={t.urls.gumroad}
-                class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+                href={t.urls.insightCheckout}
+                class="lemonsqueezy-button rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
                 rel="noopener noreferrer"
-                target="_blank"
               >
-                Gumroad
+                Lemon Squeezy
               </a>
             </li>
           </ul>
@@ -53,8 +55,9 @@ const mail = `mailto:${t.urls.contactEmail}`;
         <div>
           <p class="text-xs font-semibold uppercase tracking-wider text-text-muted">{t.footer.legalTitle}</p>
           <ul class="mt-4 space-y-2 text-sm text-text-secondary">
-            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href="/accessibility">{t.footer.accessibility}</a></li>
-            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href="#">{t.footer.privacy}</a></li>
+            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={`/${lang}/accessibility/`}>{t.footer.accessibility}</a></li>
+            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={`/${lang}/terms/`}>{t.terms.pageTitle}</a></li>
+            <li><a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={`/${lang}/privacy/`}>{t.footer.privacy}</a></li>
             <li>
               <a class="rounded hover:text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink" href={mail}>
                 {t.footer.contact}: {t.urls.contactEmail}

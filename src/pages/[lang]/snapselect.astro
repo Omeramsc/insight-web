@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import SnapSelectHero from '../../components/SnapSelectHero.astro';
+import SnapSelectDemo from '../../components/SnapSelectDemo.astro';
+import SnapSelectFeatures from '../../components/SnapSelectFeatures.astro';
+import SnapSelectPricing from '../../components/SnapSelectPricing.astro';
+import en from '../../i18n/en.json';
+import ja from '../../i18n/ja.json';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'ja' } }];
+}
+
+const { lang } = Astro.params;
+const locale = lang === 'ja' ? 'ja' : 'en';
+const t = locale === 'ja' ? ja : en;
+
+const title = "SnapSelect — " + t.snapselect.hero.h1_line1 + " " + t.snapselect.hero.h1_line2;
+const description = t.snapselect.hero.subtitle;
+---
+
+<Base lang={locale} title={title} description={description} product="snapselect">
+  <link slot="head" rel="preload" as="image" href="/assets/snapselect-icon.png" />
+  <SnapSelectHero lang={locale} />
+  <SnapSelectDemo lang={locale} />
+  <SnapSelectFeatures lang={locale} />
+  <SnapSelectPricing lang={locale} />
+</Base>

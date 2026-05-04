@@ -1,19 +1,20 @@
 {
   "urls": {
-    "gumroad": "https://5558697242856.gumroad.com/l/bhhwsy",
+    "insightCheckout": "https://luvetis.lemonsqueezy.com/checkout/buy/ee4d9134-0984-40ef-9c9c-6d391fc78871",
+    "snapselectCheckout": "https://luvetis.lemonsqueezy.com/checkout/buy/c7b29e2d-4bfd-4eef-a69c-4664d18dc773",
     "luvetis": "https://luvetis.com",
-    "youtubeId": "YOUR_VIDEO_ID",
-    "contactEmail": "you@example.com",
+    "youtubeId": "UJ-Lmyt6tao",
+    "contactEmail": "insight@luvetis.com",
     "canonicalBase": "https://luvetis.com"
   },
   "skipLink": "メインコンテンツへスキップ",
   "meta": {
-    "title": "Insight — Adobe Photoshop 向け AI 写真アシスタント",
-    "description": "Adobe Photoshop 向けの包括的な AI 統合。Generative Fill、スマートな critique、ライティング分析など。"
+    "title": "Insight — フォトグラファーのためのプロフェッショナル写真アシスタント",
+    "description": "想像力を豊かにし、最小限の労力で最大限の成果を。高解像度の生成塗りつぶし、スマートな批評、そして技術コーチング。"
   },
   "og": {
     "title": "Insight for Photoshop",
-    "description": "Adobe Photoshop での、AI を活用したアドバンテージ。"
+    "description": "あなたのビジョンを、Adobe Photoshopで拡張する。"
   },
   "nav": {
     "brand": "LUVETIS",
@@ -22,121 +23,135 @@
     "demo": "デモ",
     "pricing": "価格",
     "faq": "FAQ",
-    "luvetis": "ルベティス",
+    "luvetis": "Luvetis",
     "cta": "Insight を入手",
     "menuOpen": "メニューを開く",
-    "menuClose": "閉じる"
+    "menuClose": "メニューを閉じる"
   },
   "hero": {
-    "label": "Adobe Photoshop プラグイン",
-    "h1_line1": "あなたの AI コパイロット。",
-    "h1_line2": "Photoshop の中に。",
-    "subtitle": "Insight はメタデータを読み取り、ピクセルを解析し、ワークスペースを離れずにフォトリアルな結果を生成します。",
-    "cta_primary": "デモを見る",
-    "cta_secondary": "Gumroad で Insight を入手",
-    "requirements": "Photoshop 2024+ が必要  ·  ご自身の Gemini API key を使用  ·  サブスクリプション不要"
+    "label": "フォトグラファーによって、フォトグラファーのために作られました",
+    "h1_line1": "あなたの視覚を、",
+    "h1_line2": "拡張する。",
+    "subtitle": "想像力を豊かにし、最小限の労力で最大限の成果を。Insightは、ライティングの洗練、構図の批評、そしてキャンバスの拡張を、シームレスな4Kワークフローの中でサポートします。",
+    "cta_primary": "ワークフローを見る",
+    "cta_secondary": "Insight を入手",
+    "requirements": "Photoshop 2024+ が必要  ·  プロフェッショナルな BYOK モデル  ·  サブスクリプション不要"
   },
   "problem": {
     "items": [
       {
-        "title": "Photoshop の AI はブラックボックス",
-        "body": "ネイティブの Generative Fill はカメラ設定を無視しがち"
+        "title": "クレジットに縛られない",
+        "body": "従来のツールは、月間の上限によってあなたの想像力を制限します。Insightなら、必要なだけ何度でも試行錯誤できる自由が得られます。"
       },
       {
-        "title": "ツールごとに別アプリが必要",
-        "body": "Lightroom、Bridge、Gemini — コンテキストスイッチの連続"
+        "title": "最小限で最大限を",
+        "body": "何時間もかかる退屈な技術的作業を、数秒のクリエイティブな洗練に変えましょう。"
       },
       {
-        "title": "毎回同じミスを直している",
-        "body": "ライティングが平坦になりがちだと誰も教えてくれない"
+        "title": "客観的な視点",
+        "body": "あなたの作品を完成させるために必要な、正直で技術的なフィードバックを、自分だけの空間で得られます。"
       }
     ]
   },
   "features": {
-    "sectionTitle": "本気のレタッチャー向け",
-    "sectionSubtitle": "レイヤースタックに留まる 6 つのモジュール — 生成から実行可能な critique まで。",
+    "sectionTitle": "プロフェッショナルなツールキット",
+    "sectionSubtitle": "レイヤースタックに留まる複数のモジュール — 生成から実行可能な批評まで。",
     "items": [
       {
-        "badge": "Generative AI",
-        "title": "高度な Generative Fill + Magic Wand",
-        "description": "選択、グレイン、すでに決めた露出を尊重するワークフローで埋め込みや再構築を行います。推測と手直しを減らします。",
+        "badge": "想像力",
+        "title": "高度な生成塗りつぶし",
+        "description": "元の写真を尊重しながら、高解像度の結果でフレームを豊かにし、キャンバスを拡張します。",
         "bullets": [
-          "EXIF とシーンの手がかりからのカメラ対応コンテキスト",
-          "一度きりで終わらない—精密化できる結果"
+          "EXIFからのカメラ対応コンテキスト",
+          "プロンプトエンジニアリングは不要 — ガイド付きの調整であなたの考えを完璧なプロンプトに変換",
+          "最大4Kの高解像度結果",
+          "レイヤースタックに留まる非破壊編集"
         ],
-        "imageAlt": "プレースホルダー: Photoshop 内の Insight Generative Fill パネル"
+        "imageAlt": "Photoshop内のInsight高度な生成塗りつぶしパネル"
       },
       {
         "badge": "アイデア出し",
-        "title": "Multi-Variance 生成",
-        "description": "1 回の実行で最大 10 の意味のあるバリエーションを生成し、差分を確認して物語に合う方向を選びます — ファイルを離れずに。",
+        "title": "マルチバリエーション生成",
+        "description": "1回の実行で最大10のバリエーションを生成し、アイデアをより速く比較して、最も強い方向性を選びます。",
         "bullets": [
           "構図、色、ディテールを一目で比較",
-          "候補を選び、非破壊編集を続行"
+          "複数のオプションを同時に生成して時間を節約",
+          "一つを選ぶか、すべてを選ぶか"
         ],
-        "imageAlt": "プレースホルダー: multi-variance プレビューグリッド"
+        "imageAlt": "マルチバリエーションプレビューグリッド"
+      },
+      {
+        "badge": "類似性",
+        "title": "参照ベースの生成",
+        "description": "最大13枚の参照写真を使用して生成します。",
+        "bullets": [
+          "参照写真からアイテム、服、キャラクター、または背景を生成",
+          "写真のスタイルや色を参照写真に合わせて変更"
+        ],
+        "imageAlt": "参照ベース生成のプレビューグリッド"
       },
       {
         "badge": "解析",
-        "title": "Dynamic Photo Compare",
-        "description": "2〜5 枚のドキュメントを重ね、構図・ライティング・インパクトで順位付けし、クライアント選定やポートフォリオ編集を迅速に。",
+        "title": "ダイナミック写真比較",
+        "description": "複数の写真を積み重ねて、構図、ライティング、インパクトでランク付けします。",
         "bullets": [
-          "レビューで信頼できる並べ替えスコア",
-          "往復を減らし、クリエイティブの方向性を明確に"
+          "写真を並べて比較",
+          "構図、ライティング、インパクトでランク付け",
+          "似た写真や似た編集から選ぶ作業が簡単に"
         ],
-        "imageAlt": "プレースホルダー: ドキュメント比較 UI"
+        "imageAlt": "ダイナミック写真比較UI"
       },
       {
-        "badge": "Critique",
-        "title": "エキスパート Critique + ライティング分解",
-        "description": "率直で実用的なフィードバックと、何が平坦で、何が偶然で、何が機能しているかを説明するライティングの読み取り — レイヤーに落とし込めます。",
+        "badge": "率直なフィードバック",
+        "title": "客観的な分析",
+        "description": "光の物理学、構図、インパクトに焦点を当てた技術的なフィードバックを、プライベートに得られます。",
         "bullets": [
-          "抽象的な称贊ではなく実行可能なメモ",
-          "セットでも応用できるライティングの言語"
+          "抽象的な称賛ではなく、実行可能な技術メモ",
+          "ライティングの不整合を即座に特定",
+          "調整可能な批評トーン（優しい、厳しい、詳細、簡潔）"
         ],
-        "imageAlt": "プレースホルダー: critique とライティング分解"
+        "imageAlt": "技術的な内訳とライティング分析"
       },
       {
-        "badge": "学習",
-        "title": "パーソナル Photoshop Tutor",
-        "description": "レイヤーとツールを見たうえでのコンテキスト対応コーチング。トレードオフを平易に説明し、再現可能な技法を構築します。",
+        "badge": "技術",
+        "title": "パーソナルスキルコーチ",
+        "description": "レイヤーを分析し、プロフェッショナルな結果を時間の経過とともに手動で達成する方法を説明する、コンテキスト対応のガイダンス。",
         "bullets": [
-          "開いているドキュメントに紐づくガイダンス",
-          "時間を尊重する短い説明"
+          "スキルを置き換えるのではなく、アップグレードする",
+          "短く、インパクトのある説明"
         ],
-        "imageAlt": "プレースホルダー: パネル内の tutor ガイダンス"
+        "imageAlt": "コーチングと技術ガイダンス"
       },
       {
         "badge": "長期的",
-        "title": "Pattern Analysis",
-        "description": "プロジェクト横断で癖と盲点を追跡し、毎回同じ露出・色・フレーミングのミスを繰り返さないようにします。",
+        "title": "パターン分析",
+        "description": "最近の作品全体の繰り返しのパターンを追跡し、将来の撮影で同じ悪い習慣を繰り返さないようにサポートします。",
         "bullets": [
-          "最近の作業傾向を表示",
-          "プライバシー優先: 分析したファイルからのインサイト"
+          "最近の作業全体から浮き彫りになる傾向"
         ],
-        "imageAlt": "プレースホルダー: pattern analysis サマリー"
+        "imageAlt": "パターン分析サマリー"
       }
     ]
   },
   "beforeAfter": {
-    "sectionTitle": "ピクセルで証明",
-    "sectionSubtitle": "ハンドルをドラッグするか矢印キーを使用。各ペアにはスクリーンリーダー向けの説明的な alt があります。",
-    "pair1Label": "シームレスな generative fill — フォトリアルでグレインにマッチ",
-    "pair2Label": "Insight の critique とライティング分解に沿ったフル編集",
-    "pair3Label": "Adobe Generative Fill vs Insight — 同一プロンプト、同一画像",
+    "sectionTitle": "技術的な証明",
+    "sectionSubtitle": "Insightが一般的な写真の課題をどのように解決するかご覧ください。",
+    "pair1Label": "環境の向上と要素の置き換え — オリジナルの品質を維持",
+    "pair2Label": "完璧なライティング調整で被写体をシームレスに合成",
+    "pair3Label": "技術的な透明性の比較 — Insight vs 標準モデル",
     "pairbefore": "before",
     "pairafter": "after",
-    "pair3BeforeLabel": "Adobe's partner models",
-    "pair3AfterLabel": "Insight",
-    "zoomTitle": "ズームクロップ — バナナテスト",
-    "zoomCaption": "静的クロップ比較（詳細写真に差し替えてください）。",
-    "pair1BeforeAlt": "カメラ撮影のポートレート、未編集",
-    "pair1AfterAlt": "Insight の AI Generative Fill 後の同一ポートレート — 背景をシームレスに拡張",
+    "pair3BeforeLabel": "標準の塗りつぶし",
+    "pair3AfterLabel": "Insightのアシスタンス",
+    "zoomTitle": "フル画質を維持",
+    "zoomCaption": "キャンバスサイズ全体を生成する場合でも、画質が維持されます。",
+    "pair1BeforeAlt": "カメラで撮影したままのポートレート、未編集",
+    "pair1AfterAlt": "Insight AI生成塗りつぶし後の同一ポートレート — 背景をシームレスに拡張",
     "pair2BeforeAlt": "コスプレイヤーのポートレート、未編集",
-    "pair2AfterAlt": "Insight の critique とライティング推奨を適用した同一コスプレイヤーのポートレート",
-    "pair3BeforeAlt": "Adobe ネイティブの Generative Fill 結果にアーティファクトが見えるバナナ画像",
-    "pair3AfterAlt": "Insight の Generative Fill 結果でフォトリアルな同一バナナ画像",
-    "zoomAlt": "バナナの Generative Fill 結果のズーム比較クロップ"
+    "pair2AfterAlt": "Insightの批評とライティング推奨を適用した同一コスプレイヤーのポートレート",
+    "pair3BeforeAlt": "Adobeネイティブの生成塗りつぶし結果にアーティファクトが見えるバナナ画像",
+    "pair3AfterAlt": "Insightの生成塗りつぶし結果でフォトリアルな同一バナナ画像",
+    "zoomAlt": "バナナの生成塗りつぶし結果のズーム比較クロップ"
   },
   "demo": {
     "sectionLabel": "製品デモ動画",
@@ -146,167 +161,312 @@
     "iframeTitle": "Insight for Photoshop — 製品デモ"
   },
   "howItWorks": {
-    "title": "使い方",
+    "title": "仕組み",
     "steps": [
       {
-        "title": "5 分でインストール。",
-        "body": "Gumroad からダウンロードし、インストーラーを実行。"
+        "title": "5分でインストール。",
+        "body": "プラグインをダウンロードし、ファイルをダブルクリックします。"
       },
       {
-        "title": "Photoshop で開く。",
-        "body": "パネルがワークスペースに表示。別ウィンドウ不要。コンテキストスイッチ不要。組み込まれた Insight のみ。"
+        "title": "Gemini APIキーを設定。",
+        "body": "Gemini Studioに登録し、数回クリックするだけで準備完了です。"
       },
       {
         "title": "よりスマートに作業。",
-        "body": "critique、生成、比較、学習。すべてキャンバス上で、新しいレイヤーに。"
+        "body": "批評、生成、比較、そして学習。すべてがあなたのキャンバス上、新しいレイヤーで進行します。"
       }
     ]
   },
   "comparison": {
-    "title": "いつものスタックとの違い",
-    "subtitle": "同じキャンバス。統合の深さが違う。",
+    "title": "Insight vs 一般的なツール",
+    "subtitle": "同じキャンバス。根本的に異なるコスト、コントロール、そして深さ。",
     "feature": "機能",
-    "adobe": "Adobe ネイティブ",
+    "adobe": "Adobe Firefly (Nano Banana)",
     "insight": "Insight",
     "rows": [
-      {
-        "label": "EXIF / カメラ設定を読む",
-        "adobe": false,
-        "other": false,
-        "insight": true
-      },
-      {
-        "label": "グレインにマッチした Generative Fill",
-        "adobe": false,
-        "other": false,
-        "insight": true
-      },
-      {
-        "label": "10 バリエーション生成",
-        "adobe": false,
-        "other": false,
-        "insight": true
-      },
-      {
-        "label": "マルチドキュメント比較",
-        "adobe": false,
-        "other": false,
-        "insight": true
-      },
-      {
-        "label": "ライティング図式",
-        "adobe": false,
-        "other": false,
-        "insight": true
-      },
-      {
-        "label": "コンテキスト対応 tutor",
-        "adobe": false,
-        "other": false,
-        "insight": true
-      },
-      {
-        "label": "時系列の pattern 分析",
-        "adobe": false,
-        "other": false,
-        "insight": true
-      },
-      {
-        "label": "サブスクリプション不要",
-        "adobe": true,
-        "other": "partial",
-        "insight": true
-      },
-      {
-        "label": "独自の API key を使用",
-        "adobe": false,
-        "other": false,
-        "insight": true
-      }
+      { "label": "4Kアクセス、ロックインなし", "adobe": "partial", "insight": true },
+      { "label": "最大13の参照", "adobe": "partial", "insight": true },
+      { "label": "ガイド付きプロンプト洗練", "adobe": false, "insight": true },
+      { "label": "使用量ベースのコスト管理", "adobe": false, "insight": true },
+      { "label": "10バリエーション生成", "adobe": false, "insight": true },
+      { "label": "マルチドキュメント比較", "adobe": false, "insight": true },
+      { "label": "プライベートチューター", "adobe": false, "insight": true },
+      { "label": "長期的なパターン分析", "adobe": false, "insight": true },
+      { "label": "独自のGeminiアクセスを活用", "adobe": false, "insight": true }
     ],
-    "yes": "あり",
-    "no": "なし",
-    "partial": "一部",
-    "otherPlugins": "他プラグイン"
+    "yes": "はい",
+    "no": "いいえ",
+    "partial": "一部"
   },
   "pricing": {
     "title": "Insight for Photoshop",
     "price": "$15",
     "subtitle": "一回購入 · サブスクリプションなし",
     "bullets": [
-      "6 つの機能モジュールすべて",
+      "すべての機能モジュール",
       "ライフタイムアップデート（現行バージョン）",
-      "ご自身の Gemini API key を使用",
+      "独自のGeminiアクセスを活用 - 透明性の高い従量課金",
+      "使用した分だけ支払い",
       "Photoshop 2024+ 対応",
-      "Windows と Mac"
+      "Windows & Mac"
     ],
-    "cta": "Gumroad で Insight を入手",
-    "note1": "安全な決済のため Gumroad にリダイレクトされます。",
-    "note2": "Gemini API の無料ティアが利用可能 — 無料で開始できます。"
+    "cta": "Insight を入手",
+    "note1": "Lemon Squeezyによる安全な決済。",
+    "note2": "独自のAPIキーを使用。生成ごとに支払い。Insightからの月間生成制限はありません。"
   },
   "faq": {
-    "title": "よくある質問",
+    "title": "FAQ",
     "items": [
       {
-        "question": "Gemini API の料金は必要ですか？",
-        "answer": "Google AI Studio から無料ティアが利用できます。多くのユーザーは無料範囲内で収まります。"
+        "question": "Gemini APIの料金は必要ですか？",
+        "answer": "Google AI Studioから無料ティアが利用可能で、すべてのテキスト機能で使用できます。生成機能には請求先アカウントが必要です。"
       },
       {
-        "question": "対応する Photoshop のバージョンは？",
-        "answer": "Photoshop 2024（v25.0）以降。CC サブスクリプションが必要です（Insight は置き換えではなくプラグインです）。"
+        "question": "対応するPhotoshopのバージョンは？",
+        "answer": "Photoshop 2024 (v25.0) 以降。CCサブスクリプションが必要です（Insightはプラグインであり、置き換えではありません）。"
       },
       {
-        "question": "Mac と Windows で動きますか？",
-        "answer": "はい、両方サポートしています。"
+        "question": "InsightはMacとWindowsの両方で動作しますか？",
+        "answer": "はい、両方サポートされています。"
       },
       {
-        "question": "データのプライバシーは？",
-        "answer": "Insight はご自身の Gemini API key を使用します。画像は Google の API により同社のプライバシーポリシーに従って処理されます。Insight 自体はデータを保存しません。"
+        "question": "データのプライバシーは保護されていますか？",
+        "answer": "Insightは独自のGemini APIキーを使用します。画像はGoogleのAPIにより、同社の[プライバシーポリシー](https://ai.google.dev/gemini-api/terms)に従って処理されます。Insight自体はデータを保存しません。"
       },
       {
-        "question": "返金はできますか？",
-        "answer": "Gumroad の返金ポリシーをご確認ください。技術的な問題がある場合はフッターのメールにご連絡ください。"
+        "question": "私の写真はGoogleのサーバーで学習されますか？",
+        "answer": "有料サービスを使用する場合、Googleは製品の改善のためにプロンプトやレスポンスを使用しません。常に最新の[Googleプライバシーポリシー](https://ai.google.dev/gemini-api/terms#data-use-paid)を確認してください。"
       },
       {
-        "question": "Photoshop ネイティブの AI との違いは？",
-        "answer": "Insight は EXIF を読み取り、グレインをマッチさせ、参照画像をサポートし、最大 10 のバリエーションを生成し、Adobe が提供しない critique / 分析 / tutor ツールを追加します。"
+        "question": "返金は可能ですか？",
+        "answer": "Lemon Squeezyの返金ポリシーを参照してください。技術的な問題がある場合は、フッターに記載されているメールアドレスまでご連絡ください。"
+      },
+      {
+        "question": "PhotoshopネイティブのAIとの違いは何ですか？",
+        "answer": "Insightは4K生成をサポートし、写真のEXIFデータを読み取り、参照画像をサポートし、複数のバリエーションを生成し、さらにAdobeが提供していない批評/分析/チュータリングツールを追加します。"
+      },
+      {
+        "question": "Insightでの生成には実際いくらかかりますか？",
+        "answer": "Insightは独自のGemini APIキーを使用するため、価格は従量課金制です（生成回数、モデル、解像度によって異なります）。競合他社のプランではパートナーモデルに月間クレジット枠を使用する場合があり、生成能力は生成あたりのクレジットコストに依存します。最新の制限やプロモーションについては、現在のプランページを確認してください。"
+      },
+      {
+        "question": "より多くのAIモデルがサポートされますか？",
+        "answer": "はい。追加の公開AIモデルが計画されています。現在のサポートは、独自のAPIキーを介したGeminiモデルを対象としています。"
       },
       {
         "question": "インターネット接続は必要ですか？",
-        "answer": "AI 機能有効時は必要です。パネル自体はオフラインで開けますが、生成 / critique には API アクセスが必要です。"
+        "answer": "はい、AI機能には必要です。プラグインパネル自体はオフラインで開けますが、生成/批評にはAPIアクセスが必要です。"
       }
     ]
   },
+  "about": {
+    "title": "A note from the developer",
+    "subtitle": "Enriching imagination, one pixel at a time.",
+    "text1": "I've spent over 15 years behind a lens, balancing the art of photography with the technical demands of professional retouching. I built Insight because I wanted a tool that would help photographers enrich their imagination and achieve more with less effort.",
+    "text2": "As a solo developer and a photographer first, my goal was simple: create a technical assistant that handles the hurdles of editing so you can stay focused on your creative vision. Insight is a passion project born from the belief that professional tools should be accessible, empowering, and above all, respectful of the artist.",
+    "signature": "Luvetis"
+  },
   "footer": {
-    "brand": "Insight by ルベティス",
+    "brand": "Insight by Luvetis",
     "linksTitle": "サイトマップ",
-    "legalTitle": "法的情報",
-    "features": "機能",
-    "demo": "デモ",
-    "luvetis": "ルベティス",
+    "legalTitle": "リーガル",
+    "luvetis": "Luvetis",
+    "snapselect": "SnapSelect (Lightroom)",
+    "insight": "Insight (Photoshop)",
     "accessibility": "アクセシビリティ声明",
-    "privacy": "プライバシーポリシー（簡易）",
+    "privacy": "プライバシーポリシー",
     "contact": "お問い合わせ",
-    "rights": "Insight は Adobe Inc. とは関係ありません。Adobe と Photoshop は Adobe Inc. の商標です。",
-    "copyright": "© 2026 ルベティス. 無断転載を禁じます。"
+    "rights": "InsightおよびSnapSelectはAdobe Inc.とは提携していません。Adobe、Photoshop、およびLightroomはAdobe Inc.の商標です。",
+    "copyright": "© 2026 Luvetis. All rights reserved."
   },
   "accessibility": {
     "pageTitle": "アクセシビリティ声明",
-    "metaDescription": "Insight for Photoshop マーケティングサイトのアクセシビリティ声明（IS 5568 / WCAG 2.1 AA 目標）。",
-    "intro": "本サイトは、イスラエル規格 IS 5568（WCAG 2.1 AA に基づく）に沿って、障害のある方にもアクセスしやすいウェブを目指しています。",
-    "featuresTitle": "本サイトのアクセシビリティ機能",
-    "features": [
-      "画像には説明的な代替テキストを付与",
-      "キーボードで主要な操作が可能",
-      "当サイトが制御する本文テキストとインタラクティブ状態は WCAG AA のコントラストを目標",
-      "Before/After 比較スライダーは矢印キーで操作可能",
-      "動画は title を付与；YouTube 上で公開者が提供する場合はキャプションあり",
-      "全ページ先頭にメインコンテンツへスキップするリンク"
+    "metaDescription": "Insight for Photoshop（IS 5568 / WCAG 2.1 Level AA準拠）のアクセシビリティ声明。",
+    "intro": "Luvetisは、テクノロジーや能力に関係なく、可能な限り幅広い視聴者がアクセスできるウェブサイトを提供することに尽力しています。私たちはウェブサイトのアクセシビリティと使いやすさを向上させるために積極的に取り組んでおり、その際、利用可能な多くの標準とガイドラインを遵守しています。",
+    "complianceStatus": "本ウェブサイトは、イスラエル規格 IS 5568 および Web Content Accessibility Guidelines (WCAG) 2.1 のレベルAAに準拠するように設計されています。",
+    "measuresTitle": "アクセシビリティを確保するために講じられた措置",
+    "measures": [
+      "スクリーンリーダー互換性のためのセマンティックHTML構造。",
+      "フルキーボードナビゲーションのサポート（Chrome/NVDAでテスト済み）。",
+      "すべての重要なテキストとUI要素に対する十分な色のコントラスト。",
+      "すべての意味のある画像に対する代替テキスト。",
+      "すべてのページにメインコンテンツへのスキップリンクを設置。",
+      "インタラクティブ要素に対する明確なフォーカスインジケーター。"
     ],
-    "limitationsTitle": "既知の制限",
-    "limitations": "埋め込み動画は YouTube のプレーヤーに依存します。プレーヤー特有の障壁がある場合はお知らせください。最終アセットまでの間、装飾的なプレースホルダー画像を使用している場合があります。",
-    "feedbackTitle": "フィードバック",
-    "feedback": "アクセシビリティ上の障壁を見つけた場合は、下記メールまでご連絡ください。5 営業日以内の返答を目指します。",
-    "lastReviewed": "最終確認: 2026年4月13日"
+    "limitationsTitle": "既知の制限と除外事項",
+    "limitations": "本サイトのアクセシビリティを確保するために最善の努力を払っていますが、いくつかの制限がある場合があります。製品デモはYouTubeでホストされています。タイトルや説明を提供していますが、完全なクローズドキャプションはサードパーティの自動システムに依存する場合があります。一部の古い画像や装飾的な画像には詳細な説明が欠けている場合があります。",
+    "feedbackTitle": "フィードバックおよび連絡先情報",
+    "feedbackIntro": "ウェブサイトのアクセシビリティに関するフィードバックを歓迎します。アクセシビリティの障壁に遭遇した場合や、改善の提案がある場合は、アクセシビリティコーディネーターまでご連絡ください。",
+    "coordinatorName": "アクセシビリティコーディネーター: Luvetisチーム",
+    "coordinatorEmail": "連絡先メール: insight@luvetis.com",
+    "coordinatorNote": "アクセシビリティに関するフィードバックには、2〜5営業日以内に回答することを目指しています。",
+    "lastUpdated": "この声明は2026年5月2日に最後に更新されました。"
+  },
+  "terms": {
+    "pageTitle": "利用規約およびEULA",
+    "metaDescription": "Insight Adobe Photoshopプラグインのエンドユーザーライセンス契約（EULA）。",
+    "intro": "重要—注意深くお読みください：このエンドユーザーライセンス契約（以下「EULA」）は、Insight Adobe Photoshopプラグイン（以下「本ソフトウェア」）に関して、お客様（個人または単一の法人のいずれか）とLuvetis（以下「開発者」）との間の法的契約です。",
+    "acceptance": "本ソフトウェアをインストール、コピー、またはその他の方法で使用することにより、お客様は本EULAの条項に拘束されることに同意したものとみなされます。本EULAの条項に同意しない場合は、本ソフトウェアをインストールまたは使用しないでください。",
+    "sections": [
+      {
+        "title": "1. ライセンスの付与",
+        "content": "開発者は、本契約の条項に従って、お客様の個人的または商業的な目的のためにのみ本ソフトウェアをダウンロード、インストール、および使用するための、取り消し可能、非独占的、譲渡不能な限定的ライセンスをお客様に付与します。このライセンスは、本ソフトウェアをサブライセンス、配布、リバースエンジニアリング、または販売する権利をお客様に付与するものではありません。"
+      },
+      {
+        "title": "2. サードパーティサービス（GOOGLE GEMINI API）",
+        "content": "本ソフトウェアは、サードパーティの人工知能（AI）サービス、具体的にはGoogle Gemini API（以下「サードパーティサービス」）と連携するブリッジプラグインとして機能します。",
+        "bullets": [
+          "外部依存関係：お客様は、本ソフトウェアの機能がサードパーティサービスの継続的な可用性、ルール、および価格構造に依存していることを認めます。",
+          "お客様自身の資格情報：本ソフトウェアでは、お客様自身のAPIキーを提供する必要がある場合があります。お客様は、このキーの取得、Googleの利用規約の遵守、および関連する使用コストのサードパーティサービスへの直接支払いに単独で責任を負います。",
+          "稼働時間の保証なし：開発者はGoogle Gemini APIの可用性、レイテンシ、または機能について制御できず、サービスの中断について一切の責任を負いません。"
+        ]
+      },
+      {
+        "title": "3. AI出力および著作権に関する免責事項",
+        "content": "本ソフトウェアは、AIを介して画像、テキスト、およびその他のコンテンツ（以下「出力」）の生成を容易にするように設計されています。",
+        "bullets": [
+          "コンテンツに関する責任の否定：開発者は、生成された出力について責任を負いません。AIシステムは予測不可能であり、不快、不正確、または著作権で保護された素材を生成する可能性があります。",
+          "使用の責任：お客様は、入力するプロンプトおよび生成する出力に対して全責任を負います。お客様は、違法、憎悪、または虐待的なコンテンツを生成するために本ソフトウェアを使用しないことに同意します。",
+          "著作権ステータス：開発者は、AI生成出力の著作権保護の可能性または所有権に関して一切の保証を行いません。"
+        ]
+      },
+      {
+        "title": "4. プライバシーとデータ処理",
+        "bullets": [
+          "ローカルストレージ：本ソフトウェアはお客様のAPIキーをお客様のデバイスにローカルに保存します。開発者は、お客様のAPIキーを自社のサーバーで収集、送信、または保存することはありません。",
+          "サードパーティに送信されるデータ：機能させるために、本ソフトウェアはPhotoshopのキャンバスからの画像データとテキストプロンプトをGoogleに直接送信します。お客様はこの送信に同意し、このデータがGoogleのプライバシーポリシーに準拠していることを認めます。開発者はこのデータの仲介者として行動しません。"
+        ]
+      },
+      {
+        "title": "5. 保証の免責",
+        "content": "本ソフトウェアは「現状のまま」提供され、商品性、特定の目的への適合性、および非侵害の保証を含むがこれらに限定されない、明示または黙示を問わず、いかなる種類の保証も行いません。いかなる場合も、本ソフトウェアまたは本ソフトウェアの使用もしくはその他の取り扱いに起因、由来、または関連して発生する、契約上の行為、不法行為、またはその他を問わず、開発者は一切の請求、損害、またはその他の責任を負わないものとします。",
+        "note": "Adobe Photoshopに関する特記事項：Adobe Photoshop内でのソフトウェアのクラッシュまたは予期しない動作が発生する可能性があります。開発者は、失われた作業、破損したファイル、またはプロジェクトの遅延について一切の責任を負いません。"
+      },
+      {
+        "title": "6. 責任の制限",
+        "content": "適用法で認められる最大限の範囲において、いかなる場合も、開発者は、本ソフトウェアの使用または使用不能から生じるいかなる特別、付随的、間接的、または派生的な損害（事業利益の損失、事業の中断、事業情報の損失、またはその他の金銭的損失による損害を含むがこれらに限定されない）についても、たとえ開発者がそのような損害の可能性について知らされていたとしても、一切の責任を負わないものとします。"
+      },
+      {
+        "title": "7. ADOBEの免責事項",
+        "content": "本EULAはお客様と開発者との間でのみ締結されます。Adobe Systems Incorporated（以下「Adobe」）は本EULAの当事者ではなく、本ソフトウェアについて責任を負わず、本ソフトウェアに関するいかなる保証またはサポートも提供しません。"
+      },
+      {
+        "title": "8. 終了",
+        "content": "本EULAは終了するまで有効です。お客様が本EULAの条項のいずれかに従わない場合、お客様の本EULAに基づく権利は開発者からの通知なしに自動的に終了します。終了時には、お客様は本ソフトウェアのすべての使用を中止し、すべてのコピーを削除しなければなりません。"
+      },
+      {
+        "title": "9. 準拠法",
+        "content": "本契約は、開発者が居住する管轄区域の法律に準拠し、同法に従って解釈されるものとし、抵触法の規定は適用されません。"
+      }
+    ],
+    "version": "バージョン: 1.0 | 発効日: 2026年4月19日"
+  },
+  "privacy": {
+    "pageTitle": "プライバシーポリシー",
+    "metaDescription": "Insight for Photoshop および Luvetis ウェブサイトのプライバシーポリシー。",
+    "intro": "Luvetis（以下「私たち」または「当方」）は、お客様のプライバシー保護に努めています。このプライバシーポリシーでは、お客様が当方のウェブサイトを訪問し、Insight Adobe Photoshopプラグインを使用する際に、当方がどのようにお客様の情報を収集、使用、保護するかについて説明します。",
+    "sections": [
+      {
+        "title": "1. データの収集と使用",
+        "content": "お客様が自発的に提供した場合（例：メールの送信）を除き、個人情報を収集することはありません。当方のウェブサイトでは、訪問者がサイトとどのように対話しているかを理解し、ユーザーエクスペリエンスを向上させるために、基本的な匿名化された分析を使用する場合があります。"
+      },
+      {
+        "title": "2. プラグイン（INSIGHT）",
+        "content": "Insightはプライバシーを念頭に置いて設計されています。これは「Bring Your Own Key」（BYOK）ツールであり、Gemini APIキーをデバイスにローカルに保存します。当方がお客様のAPIキーやPhotoshopのキャンバスデータを自社のサーバーで収集、送信、または保存することはありません。"
+      },
+      {
+        "title": "3. サードパーティサービス",
+        "content": "機能を提供するために、本ソフトウェアは以下のサードパーティサービスと対話します。",
+        "bullets": [
+          "Google Gemini API：画像データとテキストプロンプトは、処理のためにGoogleに直接送信されます。このデータは、Googleのプライバシーポリシーと利用規約に従って管理されます。",
+          "Lemon Squeezy：すべての購入とライセンス発行は、Lemon Squeezyによって処理されます。彼らはライセンス配信のために支払い情報とメールアドレスを収集します。詳細はLemon Squeezyのプライバシーポリシーを参照してください。"
+        ]
+      },
+      {
+        "title": "4. データセキュリティ",
+        "content": "当方は、不正アクセスや開示から、当方が保有する可能性のある限られた情報（メール通信など）を保護するために、合理的なセキュリティ対策を講じています。"
+      },
+      {
+        "title": "5. お客様の権利",
+        "content": "お客様の場所によっては、直接の連絡を通じて共有した情報のアクセス、訂正、または削除を要求する権利など、個人データに関する権利を有する場合があります。"
+      },
+      {
+        "title": "6. 本ポリシーの変更",
+        "content": "当方は、このプライバシーポリシーを随時更新する場合があります。変更がある場合は、更新された発効日とともにこのページに掲載されます。"
+      }
+    ],
+    "version": "最終更新日: 2026年5月2日"
+  },
+  "snapselect": {
+    "nav": {
+      "product": "SnapSelect for Lightroom"
+    },
+    "hero": {
+      "h1_line1": "クライアント選定を",
+      "h1_line2": "自動化。",
+      "subtitle": "散らばったファイル名のリストを一瞬でフラグ付きの写真に。SnapSelect は、バラバラなファイル名、番号、クライアントのメモを即座に解析し、カタログ内の正しい写真を自動的にマークします。",
+      "cta_primary": "SnapSelect を入手",
+      "requirements": "Adobe Lightroom Classic が必要  ·  Mac & Windows"
+    },
+    "features": {
+      "sectionTitle": "手作業の苦労をなくす",
+      "sectionSubtitle": "ファイル名を探す必要はもうありません。テキストをドロップしてボタンをクリックするだけ。",
+      "items": [
+        {
+          "badge": "スマート解析",
+          "title": "インテリジェントなテキスト検出",
+          "description": "クライアントが送ってくる紛らわしいリスト (A7_543, DSC-03-DSC-06, 124-000543) も問題ありません。SnapSelect は不要なテキストを無視し、必要なものだけを検出してフィルタリングします。",
+          "bullets": [
+            "複数のファイル命名規則に対応",
+            "会話文を無視",
+            "即座に結果を表示"
+          ],
+          "imageAlt": "SnapSelect 解析 UI"
+        },
+        {
+          "badge": "プライバシー",
+          "title": "プライベートなクライアントメタデータ",
+          "description": "クライアント名や特別な編集リクエストを、Lightroom のプライベートなメタデータフィールドに直接注入します。",
+          "bullets": [
+            "最終的なエクスポートに漏れることはありません",
+            "すべての情報を写真に保持",
+            "メールとカタログを行き来する必要なし"
+          ],
+          "imageAlt": "SnapSelect のカスタムフィールドを表示する Lightroom メタデータパネル"
+        },
+        {
+          "badge": "ワークフロー",
+          "title": "自由自在なマーキング",
+          "description": "カスタムフラグ、レーティング、またはカラーラベルを適用。既存のマークを上書きして、最終的な選択を完璧にし、エクスポートの準備を整えます。",
+          "bullets": [
+            "既存のフラグを上書き",
+            "星評価とカラーラベルを設定",
+            "柔軟なマーキングオプション"
+          ],
+          "imageAlt": "SnapSelect マーキングオプション UI"
+        }
+      ]
+    },
+    "pricing": {
+      "title": "SnapSelect for Lightroom",
+      "price": "$5",
+      "subtitle": "一回購入 · サブスクリプションなし",
+      "bullets": [
+        "ライフタイムアップデート（現行バージョン）",
+        "Adobe Lightroom Classic 対応",
+        "Windows と Mac"
+      ],
+      "cta": "SnapSelect を入手",
+      "note1": "安全な決済のため Lemon Squeezy にリダイレクトされます。",
+      "note2": "プロジェクトごとの退屈な手動選定作業を数時間節約できます。"
+    },
+    "demo": {
+      "sectionLabel": "製品デモ動画",
+      "title": "実際の動作",
+      "subtitle": "SnapSelect がバラバラなクライアントリストを数秒で完璧にフラグ立てされたカタログに変える様子をご覧ください。",
+      "play": "動画を読み込んで再生",
+      "iframeTitle": "SnapSelect for Lightroom — 製品デモ",
+      "youtubeId": "edkuLnAePeo"
+    }
   }
 }

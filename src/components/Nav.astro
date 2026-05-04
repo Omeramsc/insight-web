@@ -6,25 +6,35 @@ import ja from '../i18n/ja.json';
 
 interface Props {
   lang: 'en' | 'ja';
+  product?: 'insight' | 'snapselect';
 }
 
-const { lang } = Astro.props;
+const { lang, product = 'insight' } = Astro.props;
 const t = lang === 'ja' ? ja : en;
 
+const isSnap = product === 'snapselect';
+const productName = isSnap ? t.snapselect.nav.product : t.nav.product;
+const ctaText = isSnap ? t.snapselect.hero.cta_primary : t.nav.cta;
+const ctaLink = isSnap ? t.urls.snapselectCheckout : t.urls.insightCheckout;
+const baseHref = isSnap ? `/${lang}/snapselect` : `/${lang}`;
+
+const ringClass = isSnap ? 'focus:ring-amber-500' : 'focus:ring-accent';
+const bgClass = isSnap ? 'bg-amber-500' : 'bg-accent';
+
 const links = [
-  { href: `/${lang}/#features`, label: t.nav.features },
-  { href: `/${lang}/#demo`, label: t.nav.demo },
-  { href: `/${lang}/#pricing`, label: t.nav.pricing },
-  { href: `/${lang}/#faq`, label: t.nav.faq },
+  { href: `${baseHref}#features`, label: t.nav.features },
+  { href: `${baseHref}#demo`, label: t.nav.demo },
+  { href: `${baseHref}#pricing`, label: t.nav.pricing },
+  ...(!isSnap ? [{ href: `${baseHref}#faq`, label: t.nav.faq }] : []),
 ];
 ---
 
 <header class="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-ink/80 backdrop-blur-sm">
   <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8 lg:px-16" aria-label="Main navigation">
-    <a href={`/${lang}/`} class="flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink rounded">
+    <a href={baseHref === `/${lang}/snapselect` ? `/${lang}/snapselect/` : `/${lang}/`} class={`flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-ink rounded ${ringClass}`}>
       <div class="flex flex-col leading-none">
         <span class="text-sm font-semibold uppercase tracking-[0.2em] text-text-primary">{t.nav.brand}</span>
-        <span class="mt-1 text-[0.65rem] font-medium uppercase tracking-[0.14em] text-text-muted">{t.nav.product}</span>
+        <span class="mt-1 text-[0.65rem] font-medium uppercase tracking-[0.14em] text-text-muted">{productName}</span>
       </div>
       <span class="sr-only">Luvetis home</span>
     </a>
@@ -33,36 +43,35 @@ const links = [
       {links.map((l) => (
         <a
           href={l.href}
-          class="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus:text-text-primary focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink rounded px-1"
+          class={`text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus:text-text-primary focus:ring-2 focus:ring-offset-2 focus:ring-offset-ink rounded px-1 ${ringClass}`}
         >
           {l.label}
         </a>
       ))}
       <a
         href={t.urls.luvetis}
-        class="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus:text-text-primary focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink rounded px-1"
+        class={`text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus:text-text-primary focus:ring-2 focus:ring-offset-2 focus:ring-offset-ink rounded px-1 ${ringClass}`}
         rel="noopener noreferrer"
         target="_blank"
       >
         {t.nav.luvetis}
       </a>
-      <LanguageSwitcher lang={lang} />
+      <LanguageSwitcher lang={lang} product={product} />
       <a
-        href={t.urls.gumroad}
-        class="inline-flex items-center gap-1 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-ink transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+        href={ctaLink}
+        class={`lemonsqueezy-button inline-flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-semibold text-ink transition hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-ink ${bgClass} ${ringClass}`}
         rel="noopener noreferrer"
-        target="_blank"
       >
-        {t.nav.cta}
+        {ctaText}
         <span aria-hidden="true">→</span>
       </a>
     </div>
 
     <div class="flex items-center gap-3 lg:hidden">
-      <LanguageSwitcher lang={lang} />
+      <LanguageSwitcher lang={lang} product={product} />
       <button
         type="button"
-        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-surface text-text-primary focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+        class={`inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-surface text-text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-ink ${ringClass}`}
         aria-expanded="false"
         aria-controls="mobile-nav"
         data-menu-button aria-label={t.nav.menuOpen}
@@ -82,7 +91,7 @@ const links = [
       {links.map((l) => (
         <a
           href={l.href}
-          class="rounded-lg px-2 py-3 text-base font-medium text-text-primary hover:bg-surface focus:outline-none focus:ring-2 focus:ring-accent"
+          class={`rounded-lg px-2 py-3 text-base font-medium text-text-primary hover:bg-surface focus:outline-none focus:ring-2 ${ringClass}`}
  data-menu-link
         >
           {l.label}
@@ -90,7 +99,7 @@ const links = [
       ))}
       <a
         href={t.urls.luvetis}
-        class="rounded-lg px-2 py-3 text-base font-medium text-text-primary hover:bg-surface focus:outline-none focus:ring-2 focus:ring-accent"
+        class={`rounded-lg px-2 py-3 text-base font-medium text-text-primary hover:bg-surface focus:outline-none focus:ring-2 ${ringClass}`}
         rel="noopener noreferrer"
         target="_blank"
         data-menu-link
@@ -98,13 +107,12 @@ const links = [
         {t.nav.luvetis}
       </a>
       <a
-        href={t.urls.gumroad}
-        class="mt-2 inline-flex items-center justify-center gap-1 rounded-lg bg-accent px-4 py-3 text-base font-semibold text-ink focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+        href={ctaLink}
+        class={`lemonsqueezy-button mt-2 inline-flex items-center justify-center gap-1 rounded-lg px-4 py-3 text-base font-semibold text-ink focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-ink ${bgClass} ${ringClass}`}
         rel="noopener noreferrer"
-        target="_blank"
         data-menu-link
       >
-        {t.nav.cta}
+        {ctaText}
         <span aria-hidden="true">→</span>
       </a>
     </div>

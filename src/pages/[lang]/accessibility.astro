@@ -1,0 +1,90 @@
+---
+import Base from '../../layouts/Base.astro';
+import en from '../../i18n/en.json';
+import ja from '../../i18n/ja.json';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'ja' } }];
+}
+
+const { lang } = Astro.params;
+const locale = lang === 'ja' ? 'ja' : 'en';
+const t = locale === 'ja' ? ja : en;
+---
+
+<Base
+  lang={locale}
+  title={`${t.accessibility.pageTitle} | Insight`}
+  description={t.accessibility.metaDescription}
+  canonicalPath={`/${locale}/accessibility`}
+>
+  <div class="mx-auto max-w-3xl px-4 py-28 md:px-8 lg:px-16 lg:py-40">
+    <article class="prose prose-invert max-w-none">
+      <header class="mb-12 border-b border-white/10 pb-12">
+        <h1 class="font-display text-4xl font-bold tracking-tight text-text-primary md:text-5xl">
+          {t.accessibility.pageTitle}
+        </h1>
+        <p class="mt-6 text-xl leading-relaxed text-text-secondary">
+          {t.accessibility.intro}
+        </p>
+      </header>
+
+      <div class="space-y-12 text-text-secondary">
+        <section>
+          <p class="leading-relaxed">
+            {t.accessibility.complianceStatus || (locale === 'en' ? 'This website is designed to comply with WCAG 2.1 Level AA standards.' : '')}
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="font-display text-2xl font-semibold text-text-primary">
+            {t.accessibility.measuresTitle || t.accessibility.featuresTitle}
+          </h2>
+          <ul class="list-disc space-y-3 pl-5 leading-relaxed">
+            {(t.accessibility.measures || t.accessibility.features).map((m) => (
+              <li>{m}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="font-display text-2xl font-semibold text-text-primary">
+            {t.accessibility.limitationsTitle}
+          </h2>
+          <p class="leading-relaxed">
+            {t.accessibility.limitations}
+          </p>
+        </section>
+
+        <section class="rounded-2xl border border-white/10 bg-white/[0.02] p-8 card-glow">
+          <h2 class="font-display text-2xl font-semibold text-text-primary">
+            {t.accessibility.feedbackTitle}
+          </h2>
+          <p class="mt-4 leading-relaxed">
+            {t.accessibility.feedbackIntro || t.accessibility.feedback}
+          </p>
+          <div class="mt-8 space-y-3">
+            <p class="font-medium text-text-primary">
+              {t.accessibility.coordinatorName || 'Luvetis Team'}
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-text-muted">{t.accessibility.coordinatorEmail ? t.accessibility.coordinatorEmail.split(': ')[0] : 'Contact'}:</span>
+              <a class="text-accent hover:underline underline-offset-4" href={`mailto:${t.urls.contactEmail}`}>
+                {t.urls.contactEmail}
+              </a>
+            </p>
+            {t.accessibility.coordinatorNote && (
+              <p class="text-sm italic text-text-muted">
+                {t.accessibility.coordinatorNote}
+              </p>
+            )}
+          </div>
+        </section>
+
+        <footer class="mt-16 pt-8 text-sm text-text-muted border-t border-white/5">
+          {t.accessibility.lastUpdated || t.accessibility.lastReviewed}
+        </footer>
+      </div>
+    </article>
+  </div>
+</Base>

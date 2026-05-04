@@ -11,9 +11,10 @@ interface Props {
   ogTitle?: string;
   ogDescription?: string;
   canonicalPath?: string;
+  product?: 'insight' | 'snapselect';
 }
 
-const { lang, title, description, ogTitle, ogDescription, canonicalPath } = Astro.props;
+const { lang, title, description, ogTitle, ogDescription, canonicalPath, product = 'insight' } = Astro.props;
 const t = lang === 'ja' ? ja : en;
 const canonical =
   (t.urls?.canonicalBase ?? 'https://luvetis.com').replace(/\/$/, '') +
@@ -41,6 +42,7 @@ const ogImageAbs = `${(t.urls?.canonicalBase ?? 'https://luvetis.com').replace(/
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Geist:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
     <slot name="head" />
   </head>
   <body class="min-h-screen bg-ink font-sans text-text-primary antialiased">
@@ -50,11 +52,11 @@ const ogImageAbs = `${(t.urls?.canonicalBase ?? 'https://luvetis.com').replace(/
     >
       {t.skipLink}
     </a>
-    <Nav lang={lang} />
+    <Nav lang={lang} product={product} />
     <main id="main-content">
       <slot />
     </main>
-    <Footer lang={lang} />
+    <Footer lang={lang} product={product} />
 
     <div
       id="site-glow"
@@ -123,12 +125,67 @@ const ogImageAbs = `${(t.urls?.canonicalBase ?? 'https://luvetis.com').replace(/
           transition: none;
         }
       }
+
+      /* Premium Micro-animations */
+      .card-glow {
+        transition: border-color 0.4s ease, box-shadow 0.4s ease;
+      }
+      .card-glow:hover {
+        border-color: rgba(108, 142, 255, 0.4);
+        box-shadow: 0 0 20px rgba(108, 142, 255, 0.1);
+      }
+
+      .feature-image-container {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .feature-image-container::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          to bottom,
+          transparent,
+          rgba(108, 142, 255, 0.05),
+          transparent
+        );
+        transform: rotate(30deg);
+        animation: scan 8s linear infinite;
+        pointer-events: none;
+      }
+
+      @keyframes scan {
+        0% { transform: rotate(30deg) translateY(-100%); }
+        100% { transform: rotate(30deg) translateY(100%); }
+      }
+
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+
+      .shimmer-text {
+        background: linear-gradient(90deg, #F0F0F8 0%, #9090A8 50%, #F0F0F8 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shimmer 6s linear infinite;
+      }
+
       img-comparison-slider {
         display: grid;
         width: 100%;
         border-radius: 0.75rem;
         overflow: hidden;
         border: 1px solid #2a2a38;
+        transition: border-color 0.3s ease;
+      }
+      img-comparison-slider:hover {
+        border-color: #6c8eff;
       }
       img-comparison-slider:focus-visible {
         outline: 2px solid #6c8eff;

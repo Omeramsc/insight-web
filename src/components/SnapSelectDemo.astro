@@ -8,40 +8,40 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = lang === 'ja' ? ja : en;
-const videoId = t.urls.youtubeId;
+const videoId = t.snapselect.demo.youtubeId;
 const hasRealVideo = Boolean(videoId && videoId !== 'YOUR_VIDEO_ID');
 const poster = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 ---
 
-<section id="demo" aria-label={t.demo.sectionLabel} class="py-16 md:py-24">
+<section id="demo" aria-label={t.snapselect.demo.sectionLabel} class="py-16 md:py-24">
   <div class="mx-auto max-w-7xl px-4 md:px-8 lg:px-16">
     <div class="mx-auto max-w-3xl text-center" data-reveal>
       <h2 class="font-display text-3xl font-semibold tracking-tight text-text-primary md:text-4xl">
-        {t.demo.title}
+        {t.snapselect.demo.title}
       </h2>
-      <p class="mt-4 text-lg text-text-secondary">{t.demo.subtitle}</p>
+      <p class="mt-4 text-lg text-text-secondary">{t.snapselect.demo.subtitle}</p>
     </div>
 
     <div class="relative mx-auto mt-12 max-w-4xl" data-reveal>
       {hasRealVideo ? (
-        <div class="relative aspect-video overflow-hidden rounded-xl border border-border bg-surface-2">
+        <div class="relative aspect-video overflow-hidden rounded-xl border border-border bg-surface-2 shadow-2xl shadow-black/40">
           <button
             type="button"
-            class="video-poster group absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-ink/40 text-text-primary backdrop-blur-sm transition hover:bg-ink/50 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+            class="video-poster group absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-ink/40 text-text-primary backdrop-blur-sm transition hover:bg-ink/50 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-ink"
             data-video-start
-            aria-label={t.demo.play}
+            aria-label={t.snapselect.demo.play}
           >
             <img src={poster} alt="" class="absolute inset-0 h-full w-full object-cover opacity-60" width="1600" height="900" loading="lazy" />
-            <span class="relative z-10 inline-flex h-16 w-16 items-center justify-center rounded-full bg-accent text-ink shadow-lg">
+            <span class="relative z-10 inline-flex h-16 w-16 items-center justify-center rounded-full bg-amber-500 text-ink shadow-lg transition-transform group-hover:scale-105">
               <svg aria-hidden="true" class="ml-1 h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7L8 5z"></path>
               </svg>
             </span>
-            <span class="relative z-10 text-sm font-semibold">{t.demo.play}</span>
+            <span class="relative z-10 text-sm font-semibold">{t.snapselect.demo.play}</span>
           </button>
           <iframe
             data-video-frame
-            title={t.demo.iframeTitle}
+            title={t.snapselect.demo.iframeTitle}
             class="absolute inset-0 hidden h-full w-full"
             width="960"
             height="540"
@@ -54,8 +54,8 @@ const poster = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
       ) : (
         <div class="relative aspect-video overflow-hidden rounded-xl border border-dashed border-border bg-surface-2 p-8 text-center">
           <p class="text-text-secondary">
-            Replace <code class="font-mono text-accent">YOUR_VIDEO_ID</code> in{' '}
-            <code class="font-mono text-accent">src/i18n/{lang}.json</code> (or overrides) to embed your YouTube demo.
+            Replace <code class="font-mono text-amber-500">YOUR_VIDEO_ID</code> in{' '}
+            <code class="font-mono text-amber-500">src/i18n/{lang}.json</code> (or overrides) to embed your YouTube demo.
           </p>
         </div>
       )}
@@ -64,7 +64,7 @@ const poster = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 </section>
 
 {hasRealVideo && (
-  <script is:inline define:vars={{ videoId, iframeTitle: t.demo.iframeTitle }}>
+  <script is:inline define:vars={{ videoId, iframeTitle: t.snapselect.demo.iframeTitle }}>
     document.addEventListener('DOMContentLoaded', function () {
       var btn = document.querySelector('[data-video-start]');
       var frame = document.querySelector('[data-video-frame]');

@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+import en from '../../i18n/en.json';
+import ja from '../../i18n/ja.json';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'ja' } }];
+}
+
+const { lang } = Astro.params;
+const locale = lang === 'ja' ? 'ja' : 'en';
+const t = locale === 'ja' ? ja : en;
+---
+
+<Base
+  lang={locale}
+  title={`${t.privacy.pageTitle} | Insight`}
+  description={t.privacy.metaDescription}
+  canonicalPath={`/${locale}/privacy`}
+>
+  <div class="mx-auto max-w-4xl px-4 py-28 md:px-8 lg:px-16 lg:py-32">
+    <article class="max-w-none">
+      <header class="mb-12 border-b border-white/10 pb-12">
+        <h1 class="font-display text-4xl font-bold tracking-tight text-text-primary md:text-5xl lg:text-6xl">
+          {t.privacy.pageTitle}
+        </h1>
+        <p class="mt-6 text-xl leading-relaxed text-text-secondary max-w-2xl">
+          {t.privacy.intro}
+        </p>
+        <div class="mt-8 flex items-center gap-4">
+          <span class="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent ring-1 ring-inset ring-accent/20">
+            {t.privacy.version}
+          </span>
+        </div>
+      </header>
+
+      <div class="space-y-16">
+        {t.privacy.sections.map((section) => (
+          <section class="space-y-6" data-reveal>
+            <h2 class="font-display text-2xl font-semibold text-text-primary flex items-center gap-3">
+              <span class="h-px flex-1 bg-white/10"></span>
+              {section.title}
+              <span class="h-px w-8 bg-white/10"></span>
+            </h2>
+            
+            {section.content && (
+              <p class="text-lg leading-relaxed text-text-secondary">
+                {section.content}
+              </p>
+            )}
+
+            {section.bullets && (
+              <ul class="space-y-4">
+                {section.bullets.map((bullet) => (
+                  <li class="flex gap-3 text-text-secondary leading-relaxed">
+                    <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span>
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+        ))}
+      </div>
+
+      <footer class="mt-20 border-t border-white/10 pt-12 text-center">
+        <p class="text-text-muted">
+          If you have questions about this privacy policy, please contact us at{' '}
+          <a href={`mailto:${t.urls.contactEmail}`} class="text-accent hover:underline underline-offset-4">
+            {t.urls.contactEmail}
+          </a>
+        </p>
+      </footer>
+    </article>
+  </div>
+</Base>
+
+<style>
+  h2 {
+    scroll-margin-top: 100px;
+  }
+</style>

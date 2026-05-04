@@ -1,14 +1,22 @@
 ---
 interface Props {
   lang: 'en' | 'ja';
+  product?: 'insight' | 'snapselect';
 }
 
-const { lang } = Astro.props;
+const { lang, product = 'insight' } = Astro.props;
+
+const getPath = (l: string) => {
+  if (product === 'snapselect') {
+    return `/${l}/snapselect/`;
+  }
+  return `/${l}/`;
+};
 ---
 
 <div class="flex items-center gap-1 text-sm text-text-secondary" role="group" aria-label="Language">
   <a
-    href="/en/"
+    href={getPath('en')}
     hreflang="en"
     lang="en"
     class:list={[
@@ -20,7 +28,7 @@ const { lang } = Astro.props;
   </a>
   <span class="text-text-muted" aria-hidden="true">|</span>
   <a
-    href="/ja/"
+    href={getPath('ja')}
     hreflang="ja"
     lang="ja"
     class:list={[

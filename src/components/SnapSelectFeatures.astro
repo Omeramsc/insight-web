@@ -10,13 +10,9 @@ const { lang } = Astro.props;
 const t = lang === 'ja' ? ja : en;
 
 const featureImages = [
-  '/assets/feature-1.png',
-  '/assets/feature-2.png',
-  '/assets/feature-3.png',
-  '/assets/feature-4.png',
-  '/assets/feature-5.png',
-  '/assets/feature-6.png',
-  '/assets/feature-7.png'
+  '/assets/snapselect-feature-1.png',
+  '/assets/snapselect-feature-2.png',
+  '/assets/snapselect-feature-3.png'
 ];
 ---
 
@@ -24,14 +20,14 @@ const featureImages = [
   <div class="mx-auto max-w-7xl px-4 md:px-8 lg:px-16">
     <div class="mx-auto max-w-3xl text-center" data-reveal>
       <h2 id="features-heading" class="font-display text-3xl font-semibold tracking-tight text-text-primary md:text-4xl">
-        {t.features.sectionTitle}
+        {t.snapselect.features.sectionTitle}
       </h2>
-      <p class="mt-4 text-lg text-text-secondary">{t.features.sectionSubtitle}</p>
+      <p class="mt-4 text-lg text-text-secondary">{t.snapselect.features.sectionSubtitle}</p>
     </div>
 
     <div class="mt-16 flex flex-col gap-16 lg:gap-24">
-      {t.features.items.map((item, i) => {
-        const img = featureImages[i] ?? '/assets/feature-1.png';
+      {t.snapselect.features.items.map((item, i) => {
+        const img = featureImages[i] ?? '/assets/snapselect-feature-1.png';
         const reverse = i % 2 === 1;
         return (
           <article
@@ -46,7 +42,7 @@ const featureImages = [
             </div>
             <div class="space-y-4">
               <div class="space-y-2">
-                <span class="inline-flex rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent">
+                <span class="inline-flex rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-500">
                   {item.badge}
                 </span>
                 <h3 class="font-display text-2xl font-semibold leading-snug text-text-primary">{item.title}</h3>
@@ -55,7 +51,7 @@ const featureImages = [
               <ul class="mt-4 space-y-2 text-base text-text-secondary">
                 {item.bullets.map((b) => (
                   <li class="flex gap-2">
-                    <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-accent" aria-hidden="true" />
+                    <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-amber-500" aria-hidden="true" />
                     <span>{b}</span>
                   </li>
                 ))}

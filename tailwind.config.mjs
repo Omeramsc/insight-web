@@ -10,9 +10,10 @@ export default {
         border: '#2A2A38',
         accent: '#6C8EFF',
         'accent-2': '#FF6B6B',
+        'accent-amber': '#F59E0B',
         'text-primary': '#F0F0F8',
         'text-secondary': '#9090A8',
-        'text-muted': '#505068',
+        'text-muted': '#8585A0',
       },
       fontFamily: {
         sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
