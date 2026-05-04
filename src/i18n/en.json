@@ -9,12 +9,12 @@
   },
   "skipLink": "Skip to main content",
   "meta": {
-    "title": "Insight — Professional Photography Assistant for Photoshop",
-    "description": "Enrich your imagination and achieve more with less. High-resolution generative fill, smart critique, and technique coaching."
+    "title": "Insight: Professional Photography Assistant for Photoshop",
+    "description": "Your vision is vast; your canvas should be too. Insight provides the professional perspective to refine lighting, analyze composition, and expand your environments with high-resolution detail."
   },
   "og": {
     "title": "Insight for Photoshop",
-    "description": "Your vision, amplified in Adobe Photoshop."
+    "description": "your vision, amplified."
   },
   "nav": {
     "brand": "LUVETIS",
@@ -31,10 +31,10 @@
   "hero": {
     "h1_line1": "Expand your",
     "h1_line2": "vision.",
-    "subtitle": "Enrich your imagination and achieve more with less. Insight helps you refine your lighting, critique your composition, and expand your canvas—all within a seamless 4K workflow.",
+    "subtitle": "Your vision is vast; your canvas should be too. Insight provides the professional perspective to refine lighting, analyze composition, and expand your environments with high-resolution detail, supporting your craft from the first capture to the final frame.",
     "cta_primary": "Watch the Workflow",
     "cta_secondary": "Get Insight",
-    "requirements": "Requires Photoshop 2024+  ·  Professional BYOK Model  ·  No Subscription"
+    "requirements": "Requires Photoshop 2024+  ·  No Subscription"
   },
   "problem": {
     "items": [
@@ -54,7 +54,7 @@
   },
   "features": {
     "sectionTitle": "Your Professional Toolkit",
-    "sectionSubtitle": "Multiple modules that stay in your layer stack — from generative work to critique you can act on.",
+    "sectionSubtitle": "Multiple modules that stay in your layer stack, from generative work to critique you can act on.",
     "items": [
       {
         "badge": "Imagination",
@@ -62,7 +62,7 @@
         "description": "Enrich your frames and expand your canvas with high-resolution results that respect your original photography.",
         "bullets": [
           "Camera-aware context from EXIF",
-          "No prompt engineering required — guided refinement translates your thoughts into perfect prompts",
+          "No prompt engineering required; guided refinement translates your thoughts into perfect prompts",
           "High-Resolution results up to 4K",
           "Stays in your layer stack, non-destructive"
         ],
@@ -103,7 +103,7 @@
       {
         "badge": "Honest Feedback",
         "title": "Objective Analysis",
-        "description": "Get technical feedback that focuses on the physics of light, composition, and impact—privately.",
+        "description": "Get technical feedback that focuses on the physics of light, composition, and impact, privately.",
         "bullets": [
           "Actionable technical notes, not generic praise",
           "Identify lighting inconsistencies instantly",
@@ -134,30 +134,46 @@
   },
   "beforeAfter": {
     "sectionTitle": "Technical proof",
-    "sectionSubtitle": "See how Insight assists in solving common photographic challenges.",
-    "pair1Label": "Elevating environments and replacing elements—maintaining original quality",
-    "pair2Label": "Seamlessly compositing subjects with perfect lighting adjustment",
-    "pair3Label": "Comparing technical clarity—Insight vs standard models",
+    "sectionSubtitle": "See how Insight assists in solving common photographic challenges across different genres.",
+    "genres": {
+      "fantasy": "Creative & Fantasy",
+      "realEstate": "Real Estate",
+      "concerts": "Event & Concert"
+    },
+    "fantasy": {
+      "pair1Label": "Elevating environments and replacing elements, maintaining original quality",
+      "pair2Label": "Seamlessly compositing subjects with perfect lighting adjustment"
+    },
+    "realEstate": {
+      "pair1Label": "Cleaning up cluttered spaces and enhancing natural light",
+      "pair2Label": "Expanding narrow interiors to showcase the full potential of a room"
+    },
+    "concerts": {
+      "pair1Label": "Refining stage lighting and removing distracting crowd elements",
+      "pair2Label": "Enhancing atmosphere and clarity in low-light environments"
+    },
     "pairbefore": "before",
     "pairafter": "after",
+    "pair3Title": "The Insight Difference",
+    "pair3Subtitle": "Native Fill vs Insight Assistance",
     "pair3BeforeLabel": "Standard Fill",
     "pair3AfterLabel": "Insight Assistance",
     "zoomTitle": "Retain full image quality",
     "zoomCaption": "Even when generating the whole Canvas size, image quality is maintained.",
-    "pair1BeforeAlt": "Portrait photo as shot from camera, unedited",
-    "pair1AfterAlt": "Same portrait after Insight AI generative fill — seamlessly extended background",
-    "pair2BeforeAlt": "Cosplayer portrait as shot, unedited",
-    "pair2AfterAlt": "Same cosplayer portrait after applying Insight critique and lighting recommendations",
-    "pair3BeforeAlt": "Banana image showing Adobe native generative fill result with visible artifacts",
-    "pair3AfterAlt": "Same banana image showing Insight generative fill result, photorealistic",
-    "zoomAlt": "Zoomed comparison crop of banana generative fill results"
+    "pair1BeforeAlt": "Original unedited photo",
+    "pair1AfterAlt": "Processed photo with Insight",
+    "pair2BeforeAlt": "Original unedited photo",
+    "pair2AfterAlt": "Processed photo with Insight",
+    "pair3BeforeAlt": "Comparison showing standard AI results",
+    "pair3AfterAlt": "Comparison showing Insight high-resolution results",
+    "zoomAlt": "High-resolution detail comparison"
   },
   "demo": {
     "sectionLabel": "Product demo video",
     "title": "See it in action",
     "subtitle": "Watch Insight turn a complex edit into a 30-second workflow.",
     "play": "Load and play video",
-    "iframeTitle": "Insight for Photoshop — product demo"
+    "iframeTitle": "Insight for Photoshop: Product Demo"
   },
   "howItWorks": {
     "title": "How it works",
@@ -204,7 +220,7 @@
     "bullets": [
       "All feature modules",
       "Lifetime updates (current version)",
-      "Leverage your own Gemini access - transparent usage-based cost",
+      "Leverage your own Gemini access: transparent usage-based cost",
       "Pay only for what you use",
       "Works with Photoshop 2024+",
       "Windows & Mac"
@@ -261,8 +277,8 @@
   "about": {
     "title": "A note from the developer",
     "subtitle": "Enriching imagination, one pixel at a time.",
-    "text1": "I've spent over 15 years behind a lens, balancing the art of photography with the technical demands of professional retouching. I built Insight because I wanted a tool that would help photographers enrich their imagination and achieve more with less effort.",
-    "text2": "As a solo developer and a photographer first, my goal was simple: create a technical assistant that handles the hurdles of editing so you can stay focused on your creative vision. Insight is a passion project born from the belief that professional tools should be accessible, empowering, and above all, respectful of the artist.",
+    "text1": "I've spent over 15 years behind a lens, balancing the art of photography with the endless hours spent refining a single frame to perfection. I built Insight because I wanted a tool that would help photographers enrich their imagination and achieve more without the technical friction that often stalls a great idea.",
+    "text2": "As a developer and a photographer first, my goal was simple: build an assistant that handles tedious editing flows and act as a second set of eyes, so you can stay focused on your creative vision. Insight is a passion project born from the belief that professional tools should be accessible, empowering, and above all, designed to amplify the artist’s unique eye.",
     "signature": "Luvetis"
   },
   "footer": {
@@ -304,7 +320,7 @@
   "terms": {
     "pageTitle": "Terms of Use & EULA",
     "metaDescription": "End User License Agreement (EULA) for Insight Adobe Photoshop Plugin.",
-    "intro": "IMPORTANT—READ CAREFULLY: This End User License Agreement (\"EULA\") is a legal agreement between you (either an individual or a single entity) and Luvetis (\"Developer\") for the Insight Adobe Photoshop Plugin (\"Software\").",
+    "intro": "IMPORTANT: READ CAREFULLY: This End User License Agreement (\"EULA\") is a legal agreement between you (either an individual or a single entity) and Luvetis (\"Developer\") for the Insight Adobe Photoshop Plugin (\"Software\").",
     "acceptance": "By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this EULA. If you do not agree to the terms of this EULA, do not install or use the Software.",
     "sections": [
       {
@@ -464,7 +480,7 @@
       "title": "See it in action",
       "subtitle": "Watch SnapSelect turn a messy client list into a perfectly flagged catalog in seconds.",
       "play": "Load and play video",
-      "iframeTitle": "SnapSelect for Lightroom — product demo",
+      "iframeTitle": "SnapSelect for Lightroom: Product Demo",
       "youtubeId": "edkuLnAePeo"
     }
   }

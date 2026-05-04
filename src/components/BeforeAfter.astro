@@ -8,6 +8,12 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = lang === 'ja' ? ja : en;
+
+const genres = [
+  { id: 'fantasy', label: t.beforeAfter.genres.fantasy },
+  { id: 'real-estate', label: t.beforeAfter.genres.realEstate },
+  { id: 'concerts', label: t.beforeAfter.genres.concerts },
+];
 ---
 
 <section class="bg-surface py-20 md:py-32" aria-labelledby="before-after-heading">
@@ -19,51 +25,120 @@ const t = lang === 'ja' ? ja : en;
       <p class="mt-4 text-lg text-text-secondary">{t.beforeAfter.sectionSubtitle}</p>
     </div>
 
-    <div class="mt-16 flex flex-col gap-24 md:gap-32">
-      <figure data-reveal data-category="portrait" class="space-y-0">
-        <div class="relative" aria-label={`Before and after comparison: ${t.beforeAfter.pair1Label}`}>
-          <img-comparison-slider class="rounded-xl">
-            <img slot="first" src="/assets/before-1-raw.jpg" alt={t.beforeAfter.pair1BeforeAlt} width="1200" height="800" loading="lazy" />
-            <img slot="second" src="/assets/after-1-edit.jpg" alt={t.beforeAfter.pair1AfterAlt} width="1200" height="800" loading="lazy" />
-          </img-comparison-slider>
-          <div class="pointer-events-none absolute inset-x-0 top-4 flex justify-between px-4 text-xs font-bold uppercase tracking-wider text-text-primary">
-            <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairbefore}</span>
-            <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairafter}</span>
-          </div>
-        </div>
-        <figcaption class="mt-4 text-center text-base font-medium text-text-secondary px-4">
-          {t.beforeAfter.pair1Label}
-        </figcaption>
-      </figure>
+    <!-- Compact Genre Switcher -->
+    <div class="mt-10 flex justify-center" data-reveal>
+      <div class="inline-flex gap-1 rounded-full border border-border bg-ink/40 p-1 backdrop-blur">
+        {genres.map((genre) => (
+          <button
+            data-genre-tab={genre.id}
+            class:list={[
+              "rounded-full px-6 py-2 text-sm font-semibold transition-all duration-300",
+              genre.id === 'fantasy' ? "active-genre bg-accent text-ink" : "text-text-secondary hover:text-text-primary"
+            ]}
+          >
+            {genre.label}
+          </button>
+        ))}
+      </div>
+    </div>
 
-      <figure data-reveal data-category="portrait" class="space-y-0">
-        <div class="relative" aria-label={`Before and after comparison: ${t.beforeAfter.pair2Label}`}>
-          <img-comparison-slider class="rounded-xl">
-            <img slot="first" src="/assets/before-2-raw.jpg" alt={t.beforeAfter.pair2BeforeAlt} width="1200" height="800" loading="lazy" />
-            <img slot="second" src="/assets/after-2-edit.jpg" alt={t.beforeAfter.pair2AfterAlt} width="1200" height="800" loading="lazy" />
-          </img-comparison-slider>
-          <div class="pointer-events-none absolute inset-x-0 top-4 flex justify-between px-4 text-xs font-bold uppercase tracking-wider text-text-primary">
-            <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairbefore}</span>
-            <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairafter}</span>
-          </div>
-        </div>
-        <figcaption class="mt-4 text-center text-base font-medium text-text-secondary px-4">
-          {t.beforeAfter.pair2Label}
-        </figcaption>
-      </figure>
+    <div class="mt-16 relative">
+      <!-- Fantasy Content -->
+      <div data-genre-content="fantasy" class="genre-pane active">
+        <div class="flex flex-col gap-24 md:gap-32">
+          <figure class="space-y-0">
+            <div class="relative" aria-label={`Before and after comparison: ${t.beforeAfter.fantasy.pair1Label}`}>
+              <img-comparison-slider class="rounded-xl">
+                <img slot="first" src="/assets/before-1-raw.jpg" alt={t.beforeAfter.pair1BeforeAlt} width="1200" height="800" loading="lazy" />
+                <img slot="second" src="/assets/after-1-edit.jpg" alt={t.beforeAfter.pair1AfterAlt} width="1200" height="800" loading="lazy" />
+              </img-comparison-slider>
+              <div class="pointer-events-none absolute inset-x-0 top-4 flex justify-between px-4 text-xs font-bold uppercase tracking-wider text-text-primary">
+                <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairbefore}</span>
+                <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairafter}</span>
+              </div>
+            </div>
+            <figcaption class="mt-4 text-center text-base font-medium text-text-secondary px-4 italic">
+              "{t.beforeAfter.fantasy.pair1Label}"
+            </figcaption>
+          </figure>
 
+          <figure class="space-y-0">
+            <div class="relative" aria-label={`Before and after comparison: ${t.beforeAfter.fantasy.pair2Label}`}>
+              <img-comparison-slider class="rounded-xl">
+                <img slot="first" src="/assets/before-2-raw.jpg" alt={t.beforeAfter.pair2BeforeAlt} width="1200" height="800" loading="lazy" />
+                <img slot="second" src="/assets/after-2-edit.jpg" alt={t.beforeAfter.pair2AfterAlt} width="1200" height="800" loading="lazy" />
+              </img-comparison-slider>
+              <div class="pointer-events-none absolute inset-x-0 top-4 flex justify-between px-4 text-xs font-bold uppercase tracking-wider text-text-primary">
+                <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairbefore}</span>
+                <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairafter}</span>
+              </div>
+            </div>
+            <figcaption class="mt-4 text-center text-base font-medium text-text-secondary px-4 italic">
+              "{t.beforeAfter.fantasy.pair2Label}"
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Real Estate Content -->
+      <div data-genre-content="real-estate" class="genre-pane">
+        <div class="flex flex-col gap-24 md:gap-32">
+          <figure class="space-y-0">
+            <div class="relative" aria-label={`Before and after comparison: ${t.beforeAfter.realEstate.pair1Label}`}>
+              <img-comparison-slider class="rounded-xl">
+                <img slot="first" src="/assets/real-estate-before.webp" alt={t.beforeAfter.pair1BeforeAlt} width="1920" height="1280" loading="lazy" />
+                <img slot="second" src="/assets/real-estate-after.webp" alt={t.beforeAfter.pair1AfterAlt} width="1920" height="1280" loading="lazy" />
+              </img-comparison-slider>
+              <div class="pointer-events-none absolute inset-x-0 top-4 flex justify-between px-4 text-xs font-bold uppercase tracking-wider text-text-primary">
+                <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairbefore}</span>
+                <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairafter}</span>
+              </div>
+            </div>
+            <figcaption class="mt-4 text-center text-base font-medium text-text-secondary px-4 italic">
+              "{t.beforeAfter.realEstate.pair1Label}"
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Concerts Content -->
+      <div data-genre-content="concerts" class="genre-pane">
+        <div class="flex flex-col gap-24 md:gap-32">
+          <figure class="space-y-0">
+            <div class="relative" aria-label={`Before and after comparison: ${t.beforeAfter.concerts.pair1Label}`}>
+              <img-comparison-slider class="rounded-xl">
+                <img slot="first" src="/assets/concert-before.webp" alt={t.beforeAfter.pair1BeforeAlt} width="1920" height="1280" loading="lazy" />
+                <img slot="second" src="/assets/concert-after.webp" alt={t.beforeAfter.pair1AfterAlt} width="1920" height="1280" loading="lazy" />
+              </img-comparison-slider>
+              <div class="pointer-events-none absolute inset-x-0 top-4 flex justify-between px-4 text-xs font-bold uppercase tracking-wider text-text-primary">
+                <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairbefore}</span>
+                <span class="rounded bg-ink/70 px-2 py-1 backdrop-blur">{t.beforeAfter.pairafter}</span>
+              </div>
+            </div>
+            <figcaption class="mt-4 text-center text-base font-medium text-text-secondary px-4 italic">
+              "{t.beforeAfter.concerts.pair1Label}"
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Common Zoom Section -->
+    <div class="mt-32">
       <figure data-reveal class="space-y-0">
-        <div class="mx-auto mt-8 max-w-4xl space-y-3">
-          <h3 class="text-center font-display text-lg font-semibold text-text-primary">{t.beforeAfter.zoomTitle}</h3>
-          <p class="text-center text-base text-text-secondary">{t.beforeAfter.zoomCaption}</p>
-          <div class="overflow-hidden rounded-xl border border-border">
+        <div class="mx-auto max-w-4xl space-y-6">
+          <div class="text-center">
+            <h3 class="font-display text-2xl font-semibold text-text-primary">{t.beforeAfter.zoomTitle}</h3>
+            <p class="mt-2 text-base text-text-secondary">{t.beforeAfter.zoomCaption}</p>
+          </div>
+          <div class="overflow-hidden rounded-2xl border border-border bg-ink/40 p-1">
             <img
               src="/assets/banana-zoom.jpg"
               alt={t.beforeAfter.zoomAlt}
               width="1200"
               height="800"
               loading="lazy"
-              class="h-full w-full object-cover"
+              class="h-full w-full rounded-xl object-cover shadow-2xl"
             />
           </div>
         </div>
@@ -72,6 +147,60 @@ const t = lang === 'ja' ? ja : en;
   </div>
 </section>
 
+<style>
+  .genre-pane {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .genre-pane.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  [data-genre-tab].active-genre {
+    color: #1a1a24; /* ink color for text contrast on accent */
+  }
+</style>
+
 <script>
   import 'img-comparison-slider';
+
+  function initGenreSwitcher() {
+    const buttons = document.querySelectorAll('[data-genre-tab]');
+    const panes = document.querySelectorAll('[data-genre-content]');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-genre-tab');
+
+        // Update buttons
+        buttons.forEach(b => {
+          b.classList.remove('active-genre', 'bg-accent', 'text-ink');
+          b.classList.add('text-text-secondary', 'hover:text-text-primary');
+        });
+        btn.classList.add('active-genre', 'bg-accent', 'text-ink');
+        btn.classList.remove('text-text-secondary', 'hover:text-text-primary');
+
+        // Update panes
+        panes.forEach(pane => {
+          if (pane.getAttribute('data-genre-content') === target) {
+            pane.classList.add('active');
+          } else {
+            pane.classList.remove('active');
+          }
+        });
+      });
+    });
+  }
+
+  // Initialize on load
+  initGenreSwitcher();
+  // Handle Astro page transitions if needed
+  document.addEventListener('astro:after-swap', initGenreSwitcher);
 </script>
+
+
+

@@ -9,12 +9,12 @@
   },
   "skipLink": "メインコンテンツへスキップ",
   "meta": {
-    "title": "Insight — フォトグラファーのためのプロフェッショナル写真アシスタント",
-    "description": "想像力を豊かにし、最小限の労力で最大限の成果を。高解像度の生成塗りつぶし、スマートな批評、そして技術コーチング。"
+    "title": "Insight：フォトグラファーのためのプロフェッショナル写真アシスタント",
+    "description": "あなたの視野は無限です。キャンバスもそうあるべきです。Insightは、ライティングの洗練、構図の分析、そして高解像度のディテールによる環境の拡張を行うためのプロフェッショナルな視点を提供します。"
   },
   "og": {
     "title": "Insight for Photoshop",
-    "description": "あなたのビジョンを、Adobe Photoshopで拡張する。"
+    "description": "あなたのビジョンを、増幅させる。"
   },
   "nav": {
     "brand": "LUVETIS",
@@ -31,10 +31,10 @@
   "hero": {
     "h1_line1": "あなたの視覚を、",
     "h1_line2": "拡張する。",
-    "subtitle": "想像力を豊かにし、最小限の労力で最大限の成果を。Insightは、ライティングの洗練、構図の批評、そしてキャンバスの拡張を、シームレスな4Kワークフローの中でサポートします。",
+    "subtitle": "あなたの視野は無限です。キャンバスもそうあるべきです。Insightは、ライティングの洗練、構図の分析、そして高解像度のディテールによる環境の拡張を行うためのプロフェッショナルな視点を提供し、最初のキャプチャから最終的なフレームまで、あなたのクラフトをサポートします。",
     "cta_primary": "ワークフローを見る",
     "cta_secondary": "Insight を入手",
-    "requirements": "Photoshop 2024+ が必要  ·  プロフェッショナルな BYOK モデル  ·  サブスクリプション不要"
+    "requirements": "Photoshop 2024+ が必要  ·  サブスクリプション不要"
   },
   "problem": {
     "items": [
@@ -54,7 +54,7 @@
   },
   "features": {
     "sectionTitle": "プロフェッショナルなツールキット",
-    "sectionSubtitle": "レイヤースタックに留まる複数のモジュール — 生成から実行可能な批評まで。",
+    "sectionSubtitle": "レイヤースタックに留まる複数のモジュール：生成から実行可能な批評まで。",
     "items": [
       {
         "badge": "想像力",
@@ -62,7 +62,7 @@
         "description": "元の写真を尊重しながら、高解像度の結果でフレームを豊かにし、キャンバスを拡張します。",
         "bullets": [
           "EXIFからのカメラ対応コンテキスト",
-          "プロンプトエンジニアリングは不要 — ガイド付きの調整であなたの考えを完璧なプロンプトに変換",
+          "プロンプトエンジニアリングは不要：ガイド付きの調整であなたの考えを完璧なプロンプトに変換",
           "最大4Kの高解像度結果",
           "レイヤースタックに留まる非破壊編集"
         ],
@@ -134,30 +134,46 @@
   },
   "beforeAfter": {
     "sectionTitle": "技術的な証明",
-    "sectionSubtitle": "Insightが一般的な写真の課題をどのように解決するかご覧ください。",
-    "pair1Label": "環境の向上と要素の置き換え — オリジナルの品質を維持",
-    "pair2Label": "完璧なライティング調整で被写体をシームレスに合成",
-    "pair3Label": "技術的な透明性の比較 — Insight vs 標準モデル",
+    "sectionSubtitle": "Insightが、さまざまなジャンルの一般的な写真の課題をどのように解決するかご覧ください。",
+    "genres": {
+      "fantasy": "クリエイティブ & ファンタジー",
+      "realEstate": "不動産",
+      "concerts": "イベント & コンサート"
+    },
+    "fantasy": {
+      "pair1Label": "環境の向上と要素の置き換え：オリジナルの品質を維持",
+      "pair2Label": "完璧なライティング調整で被写体をシームレスに合成"
+    },
+    "realEstate": {
+      "pair1Label": "乱雑な空間の整理と自然光の強化",
+      "pair2Label": "狭い室内を拡張し、部屋の可能性を最大限に引き出す"
+    },
+    "concerts": {
+      "pair1Label": "ステージ照明の微調整と邪魔な観客要素の除去",
+      "pair2Label": "低照度環境での雰囲気と鮮明度の向上"
+    },
     "pairbefore": "before",
     "pairafter": "after",
+    "pair3Title": "Insight の違い",
+    "pair3Subtitle": "標準の塗りつぶし vs Insight のアシスタンス",
     "pair3BeforeLabel": "標準の塗りつぶし",
     "pair3AfterLabel": "Insightのアシスタンス",
     "zoomTitle": "フル画質を維持",
     "zoomCaption": "キャンバスサイズ全体を生成する場合でも、画質が維持されます。",
-    "pair1BeforeAlt": "カメラで撮影したままのポートレート、未編集",
-    "pair1AfterAlt": "Insight AI生成塗りつぶし後の同一ポートレート — 背景をシームレスに拡張",
-    "pair2BeforeAlt": "コスプレイヤーのポートレート、未編集",
-    "pair2AfterAlt": "Insightの批評とライティング推奨を適用した同一コスプレイヤーのポートレート",
-    "pair3BeforeAlt": "Adobeネイティブの生成塗りつぶし結果にアーティファクトが見えるバナナ画像",
-    "pair3AfterAlt": "Insightの生成塗りつぶし結果でフォトリアルな同一バナナ画像",
-    "zoomAlt": "バナナの生成塗りつぶし結果のズーム比較クロップ"
+    "pair1BeforeAlt": "未編集のオリジナル写真",
+    "pair1AfterAlt": "Insightで処理された写真",
+    "pair2BeforeAlt": "未編集のオリジナル写真",
+    "pair2AfterAlt": "Insightで処理された写真",
+    "pair3BeforeAlt": "標準的なAIの結果を示す比較",
+    "pair3AfterAlt": "Insightの高解像度な結果を示す比較",
+    "zoomAlt": "高解像度ディテールの比較"
   },
   "demo": {
     "sectionLabel": "製品デモ動画",
     "title": "実際の動作",
     "subtitle": "複雑な編集を 30 秒のワークフローにまとめる Insight をご覧ください。",
     "play": "動画を読み込んで再生",
-    "iframeTitle": "Insight for Photoshop — 製品デモ"
+    "iframeTitle": "Insight for Photoshop：製品デモ"
   },
   "howItWorks": {
     "title": "仕組み",
@@ -204,7 +220,7 @@
     "bullets": [
       "すべての機能モジュール",
       "ライフタイムアップデート（現行バージョン）",
-      "独自のGeminiアクセスを活用 - 透明性の高い従量課金",
+      "独自のGeminiアクセスを活用：透明性の高い従量課金",
       "使用した分だけ支払い",
       "Photoshop 2024+ 対応",
       "Windows & Mac"
@@ -261,8 +277,8 @@
   "about": {
     "title": "A note from the developer",
     "subtitle": "Enriching imagination, one pixel at a time.",
-    "text1": "I've spent over 15 years behind a lens, balancing the art of photography with the technical demands of professional retouching. I built Insight because I wanted a tool that would help photographers enrich their imagination and achieve more with less effort.",
-    "text2": "As a solo developer and a photographer first, my goal was simple: create a technical assistant that handles the hurdles of editing so you can stay focused on your creative vision. Insight is a passion project born from the belief that professional tools should be accessible, empowering, and above all, respectful of the artist.",
+    "text1": "15年以上にわたりレンズ越しに世界を見つめ、写真の芸術性と、一枚の写真を完璧に仕上げるために費やす膨大な編集作業との間でバランスを取り続けてきました。私がInsightを作ったのは、偉大なアイデアを阻む技術的な摩擦を取り除き、写真家が想像力を豊かにし、より多くのことを達成できるツールが欲しかったからです。",
+    "text2": "開発者であり、何よりも一人の写真家として、私の目標はシンプルでした。退屈な編集フローを処理し、「第2の目」として機能するアシスタントを構築することです。そうすることで、あなたはクリエイティブなビジョンに集中し続けることができます。Insightは、プロフェッショナルなツールは身近で、力を与えるものであり、そして何よりも、アーティスト独自の視点を増幅させるために設計されるべきだという信念から生まれた情熱的なプロジェクトです。",
     "signature": "Luvetis"
   },
   "footer": {
@@ -304,7 +320,7 @@
   "terms": {
     "pageTitle": "利用規約およびEULA",
     "metaDescription": "Insight Adobe Photoshopプラグインのエンドユーザーライセンス契約（EULA）。",
-    "intro": "重要—注意深くお読みください：このエンドユーザーライセンス契約（以下「EULA」）は、Insight Adobe Photoshopプラグイン（以下「本ソフトウェア」）に関して、お客様（個人または単一の法人のいずれか）とLuvetis（以下「開発者」）との間の法的契約です。",
+    "intro": "重要：注意深くお読みください：このエンドユーザーライセンス契約（以下「EULA」）は、Insight Adobe Photoshopプラグイン（以下「本ソフトウェア」）に関して、お客様（個人または単一の法人のいずれか）とLuvetis（以下「開発者」）との間の法的契約です。",
     "acceptance": "本ソフトウェアをインストール、コピー、またはその他の方法で使用することにより、お客様は本EULAの条項に拘束されることに同意したものとみなされます。本EULAの条項に同意しない場合は、本ソフトウェアをインストールまたは使用しないでください。",
     "sections": [
       {
@@ -464,7 +480,7 @@
       "title": "実際の動作",
       "subtitle": "SnapSelect がバラバラなクライアントリストを数秒で完璧にフラグ立てされたカタログに変える様子をご覧ください。",
       "play": "動画を読み込んで再生",
-      "iframeTitle": "SnapSelect for Lightroom — 製品デモ",
+      "iframeTitle": "SnapSelect for Lightroom：製品デモ",
       "youtubeId": "edkuLnAePeo"
     }
   }
